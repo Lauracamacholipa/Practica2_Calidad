@@ -1647,5 +1647,22 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "2377cc76133fa568c3fe15c425d2694eecd253c4",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-05T03:13:13.000Z",
+      "message": "chore: correcion de error",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2377cc76133fa568c3fe15c425d2694eecd253c4"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 0,
+      "deletions": 48,
+      "date": "2025-10-05"
+    },
+    "coverage": 0,
+    "test_count": 0
   }
 ]

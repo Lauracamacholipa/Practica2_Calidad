@@ -1,0 +1,1651 @@
+[
+  {
+    "sha": "1711849e294157dec72d6d03e10ecdc4165ac0f5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-04-29T13:55:12.000Z",
+      "message": "feat:Se agrego visualizacion en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/1711849e294157dec72d6d03e10ecdc4165ac0f5"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 3,
+      "deletions": 10,
+      "date": "2025-04-29"
+    },
+    "coverage": 0,
+    "test_count": 1
+  },
+  {
+    "sha": "a1236c9c3a77c89cbd17bb243b1f5a1911631b1a",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-04-29T15:51:14.000Z",
+      "message": "refactory: se cambio los test para que pasen con la nueva variable",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a1236c9c3a77c89cbd17bb243b1f5a1911631b1a"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 8,
+      "deletions": 4,
+      "date": "2025-04-29"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "003b51b68e34cd68c63fabb2def613920674d684",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-04-29T19:30:34.000Z",
+      "message": "refactory: se agrego el formulario de los conductores, mensajes de falta llenar casillas y mensaje de confirmacion",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/003b51b68e34cd68c63fabb2def613920674d684"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 50,
+      "deletions": 9,
+      "date": "2025-04-29"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "02957da0df46b7e7844d52100adea36e04564a48",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-04-30T19:40:52.000Z",
+      "message": "feat: se agrego el boton de registrar surtidor",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/02957da0df46b7e7844d52100adea36e04564a48"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 30,
+      "deletions": 13,
+      "date": "2025-04-30"
+    },
+    "coverage": 0,
+    "test_count": 1
+  },
+  {
+    "sha": "29f0f35aa8fb83a358e7401f5d53e671275631e3",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T17:00:01.000Z",
+      "message": "Feat and Test: Primer test y funcion de listarSurtidores para que se vea sus propiedades",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/29f0f35aa8fb83a358e7401f5d53e671275631e3"
+    },
+    "stats": {
+      "total": 63,
+      "additions": 49,
+      "deletions": 14,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 1
+  },
+  {
+    "sha": "95d430da4d218bd598deaad5511f3318742b1dc7",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T17:18:28.000Z",
+      "message": "Test: Prueba con los 4 primero surtidores registrados",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/95d430da4d218bd598deaad5511f3318742b1dc7"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 71,
+      "deletions": 15,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 1
+  },
+  {
+    "sha": "551901c702035bef40f31ea313764eaa66e6cc0b",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T17:21:41.000Z",
+      "message": "Test: Prueba que el array cumple con 6 estaciones y que entre los 6 surtidores haya de los 3 tipos de combustibles",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/551901c702035bef40f31ea313764eaa66e6cc0b"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 2
+  },
+  {
+    "sha": "65b49dfc039ffd5fc6e994558dfc2520a77742d9",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T17:22:35.000Z",
+      "message": "Test: Prueba que los surtidores tengan mas 0Litros en combustibe",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/65b49dfc039ffd5fc6e994558dfc2520a77742d9"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 3
+  },
+  {
+    "sha": "042d16e3795eac90b4299be414574fc608e75d38",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T18:21:20.000Z",
+      "message": "Test and Feat: Prueba y funcionalidad  para comprobar una lista ordenada por combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/042d16e3795eac90b4299be414574fc608e75d38"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 24,
+      "deletions": 1,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 4
+  },
+  {
+    "sha": "b432a89c971cf62f8dbcc08ae9b91327753cf5b7",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T18:34:03.000Z",
+      "message": "Test and Feat: Prueba y funcionalidad  para filtrar por tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/b432a89c971cf62f8dbcc08ae9b91327753cf5b7"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 45,
+      "deletions": 4,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 9
+  },
+  {
+    "sha": "a3124017bab8bafa96a700f1ecb49a550a8fd9eb",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T19:20:24.000Z",
+      "message": "Fix and Refactor: Eliminacioncompleta  de palabras con acentos y que daba errores, tambien nueva ruta a la lista de estaciones",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a3124017bab8bafa96a700f1ecb49a550a8fd9eb"
+    },
+    "stats": {
+      "total": 220,
+      "additions": 112,
+      "deletions": 108,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 9
+  },
+  {
+    "sha": "4ff4b983ac78e83a8eecee8c4874b4ee0fea7944",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T19:24:20.000Z",
+      "message": "Refactor:Implementacion de presenter2 y index2 para no estropear el main original, archivos que se van a elimnar a futuro",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/4ff4b983ac78e83a8eecee8c4874b4ee0fea7944"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 9
+  },
+  {
+    "sha": "c66407a46004155cfe29960e555b50717a5b0bc0",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T19:36:20.000Z",
+      "message": "Docs: Cambios en el presenter2 y index2 para que me muestre los surtidores por mayor cant de litros y por tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c66407a46004155cfe29960e555b50717a5b0bc0"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 69,
+      "deletions": 23,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 9
+  },
+  {
+    "sha": "a300aefbd28d0eda495fbe8de69be3c22b27d939",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T20:51:09.000Z",
+      "message": "feat, refactor, test: Nueva funcionalidad que es poder fltrar por zona, a la misma vez los test pasados los actualizamos para que no error, y realizamos los test de zona",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a300aefbd28d0eda495fbe8de69be3c22b27d939"
+    },
+    "stats": {
+      "total": 200,
+      "additions": 140,
+      "deletions": 60,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "70594f6370e645433e188ff8b997c2f4ac6365b9",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T20:54:03.000Z",
+      "message": "refactor: Actuliacion del archivo presenter2 respecto a la nueva funcionalidad de filtrar por zona",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/70594f6370e645433e188ff8b997c2f4ac6365b9"
+    },
+    "stats": {
+      "total": 117,
+      "additions": 74,
+      "deletions": 43,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "4be62fb2c4d2c234a4f18869bb672b6f99a597b6",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T21:42:10.000Z",
+      "message": "Guardando/Save cambios de la rama con 3H.U completadas",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/4be62fb2c4d2c234a4f18869bb672b6f99a597b6"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 32,
+      "deletions": 27,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "697d124c559b83dfda95b55b6270876f26eafab6",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T21:57:19.000Z",
+      "message": "Replicar el index del main para que no haya error en el merge",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/697d124c559b83dfda95b55b6270876f26eafab6"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 3,
+      "deletions": 7,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "02cc4f1e24300d9a17615d11e6abed43d225fe6d",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T22:09:18.000Z",
+      "message": "Merge completado: integrando dispo_combustible y nuevos archivos",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/02cc4f1e24300d9a17615d11e6abed43d225fe6d"
+    },
+    "stats": {
+      "total": 601,
+      "additions": 587,
+      "deletions": 14,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "ef65a85bd7e4f505d7abdf6793ab1eca79cf8281",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-01T22:12:47.000Z",
+      "message": "refactor: Enlace a index2",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/ef65a85bd7e4f505d7abdf6793ab1eca79cf8281"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2025-05-01"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "ed43228208967f621527be9a4eaebc12c382e03d",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-02T04:13:30.000Z",
+      "message": "feat: agrege mensaje que es una cantidad invalidad",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/ed43228208967f621527be9a4eaebc12c382e03d"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 11,
+      "deletions": 2,
+      "date": "2025-05-02"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "2e33562e670193cd7a9b55ba47010100817043e8",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-02T04:37:36.000Z",
+      "message": "feat: se agrego el boton de registrar combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/2e33562e670193cd7a9b55ba47010100817043e8"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 6,
+      "deletions": 5,
+      "date": "2025-05-02"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "8ba819f0ff95d234be55d6f036be83506a868bca",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-03T01:19:36.000Z",
+      "message": "feat: se agrego boton para agregar gasolina",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/8ba819f0ff95d234be55d6f036be83506a868bca"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "684df33f86eaeaa318c0bcbd7a2ddd90940fd145",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T02:08:45.000Z",
+      "message": "feat:deberia registrar el nombre de la estacion de servicio correctamente",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/684df33f86eaeaa318c0bcbd7a2ddd90940fd145"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 11
+  },
+  {
+    "sha": "a2425d3befa2d7ad61d2140c7f718f5cae07f763",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T02:45:17.000Z",
+      "message": "feat:Se agrega el nombre de la estacion de servicio en la lista",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a2425d3befa2d7ad61d2140c7f718f5cae07f763"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 56,
+      "deletions": 10,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 0
+  },
+  {
+    "sha": "64cbec9da50517bd06d79a511dc9528503f709ec",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T02:53:08.000Z",
+      "message": "fix:Se arreglaron errores de pruebas",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/64cbec9da50517bd06d79a511dc9528503f709ec"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 23,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 11
+  },
+  {
+    "sha": "213863ec8bbb77f86e5167e2df07ab05f5089f5e",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T02:59:08.000Z",
+      "message": "feat:Se agrego el seleccionar zona para registrar surtidor en la interfaz",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/213863ec8bbb77f86e5167e2df07ab05f5089f5e"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 11
+  },
+  {
+    "sha": "25fffee2ba8dbcdacecf1262c89058a25cc2167a",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:08:06.000Z",
+      "message": "feat:deberia registrar correctamente el nombre y la zona del estacion de servicio",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/25fffee2ba8dbcdacecf1262c89058a25cc2167a"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 16,
+      "deletions": 3,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 12
+  },
+  {
+    "sha": "c84dbf8a4459e1fc517468186119b97fad902bd0",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:20:07.000Z",
+      "message": "Se agrega la zona de la estacion de servicio en la lista",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c84dbf8a4459e1fc517468186119b97fad902bd0"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 12
+  },
+  {
+    "sha": "91aa79ee9472e5cd2571ce1fd57dd7b2c9003b9f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:24:42.000Z",
+      "message": "feat: Se agrego el espacio para la direccion en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/91aa79ee9472e5cd2571ce1fd57dd7b2c9003b9f"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 12
+  },
+  {
+    "sha": "cfd57a48e5ab7c3e8eea74ce30cdef2d08e23e15",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:30:48.000Z",
+      "message": "feat: deberia registrar correctamente el nombre, la zona y la direccion de la estacion de servicio",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/cfd57a48e5ab7c3e8eea74ce30cdef2d08e23e15"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 13
+  },
+  {
+    "sha": "8bdd9058fdbf7f5c599514b852f893215646055a",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:37:20.000Z",
+      "message": "feat: se agrega la direccion de la estacion de servicio en la zona",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/8bdd9058fdbf7f5c599514b852f893215646055a"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 13
+  },
+  {
+    "sha": "74e6ac2dd4567836d81a8b33dca01a5df6b35c50",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-03T03:48:44.000Z",
+      "message": "feat: se agrego el formulario de ingresar combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/74e6ac2dd4567836d81a8b33dca01a5df6b35c50"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "95b70d77b25a80d91a7fcc76bf5e2dbc148c5dcc",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:52:01.000Z",
+      "message": "feat: Si la ES recibe registra uno ya existente lanza un mensaje de que ya esta registrado",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/95b70d77b25a80d91a7fcc76bf5e2dbc148c5dcc"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 41,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "702583f6bd4198ac5b01f19cfa61af399f405c1c",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T03:57:55.000Z",
+      "message": "feat:se agrego la visualizacion del mensaje de estacion de servicio ya registrada",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/702583f6bd4198ac5b01f19cfa61af399f405c1c"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 9,
+      "deletions": 4,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "2de41ffb0b3f72da8d42d7a9adc4dea5d0031c28",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T04:05:31.000Z",
+      "message": "feat: se agrego la visualizacion que los campos son necesarios",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/2de41ffb0b3f72da8d42d7a9adc4dea5d0031c28"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "f58087f8b78b4c6b8ea4a84f07c9a4163b6bcb12",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T04:09:26.000Z",
+      "message": "feat: Se agrego mensaje de confirmacion de registro",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/f58087f8b78b4c6b8ea4a84f07c9a4163b6bcb12"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "4250b61ab8d39a88b1c6d26f30af1d21e6cd3de5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T15:19:50.000Z",
+      "message": "feat: Se agrego el boton de calcular cola en la interfaz",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/4250b61ab8d39a88b1c6d26f30af1d21e6cd3de5"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "32e2b66e73a267f7f63718043c45ef4730b4cac5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T15:27:00.000Z",
+      "message": "feat:Se agrego la visualizacion de la ventana nueva de calculadora de colas",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/32e2b66e73a267f7f63718043c45ef4730b4cac5"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 22,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "39f78447c32b97d2b688333e5969409097bd2370",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T15:50:12.000Z",
+      "message": "feat:Se agrego la visualizacion de introducir distancia para el calculo de colas",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/39f78447c32b97d2b688333e5969409097bd2370"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "91004f43a24f80a2d2f63440da50379300cbd576",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T15:59:51.000Z",
+      "message": "feat:Deberia calcular la cantidad de vehiculos antes de mi",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/91004f43a24f80a2d2f63440da50379300cbd576"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 15
+  },
+  {
+    "sha": "8d842f6db68659759c689ae9af68930f83a6f4ff",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T16:06:23.000Z",
+      "message": "feat:Deberia redondear si sale un resultado con decimales",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/8d842f6db68659759c689ae9af68930f83a6f4ff"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 16
+  },
+  {
+    "sha": "283d5c80ae0461e49623f1278062def7c995775e",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T16:50:26.000Z",
+      "message": "feat: deberia devolver la capacidad de carga basdo en la cantidad de litros",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/283d5c80ae0461e49623f1278062def7c995775e"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 17
+  },
+  {
+    "sha": "63ecfc973285b51fb74a0cdacb24859387597e93",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T16:55:02.000Z",
+      "message": "feat:lanza un mensaje positivo si la gasolina alcanzara",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/63ecfc973285b51fb74a0cdacb24859387597e93"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 13,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 18
+  },
+  {
+    "sha": "8aedd27952f90a937e9924ef4ca44913d4611818",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T16:56:55.000Z",
+      "message": "feat:Lanza un mensaje negativo si no alcanzara",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/8aedd27952f90a937e9924ef4ca44913d4611818"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 19
+  },
+  {
+    "sha": "80f6290c32ac121987121c05112a95bed30e2659",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:03:06.000Z",
+      "message": "feat:Si la cantidad de vehiculos es igual a la capacidad de carga manda un mnesaje de advertencia",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/80f6290c32ac121987121c05112a95bed30e2659"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "0bdbde69104edf8cd6ec37e9957e1631879446b4",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:06:45.000Z",
+      "message": "feat:Se agrego la visualizacion para ingresas la cantidad de combustible en litros en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/0bdbde69104edf8cd6ec37e9957e1631879446b4"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "85ee3286a5e2c57fc708ef90148b2a2d73a3f1cd",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:13:31.000Z",
+      "message": "feat:Se agrego la visualizacion de los mensajes en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/85ee3286a5e2c57fc708ef90148b2a2d73a3f1cd"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "4f24fe9dc7964ebedc6fb33a5b0dd79140994b2f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:29:22.000Z",
+      "message": "Se agrego el boton de mostrar detalles del calculo en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/4f24fe9dc7964ebedc6fb33a5b0dd79140994b2f"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "0eca0b8eb115b75929aacc3a3c8a7ef2236545e8",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:41:45.000Z",
+      "message": "feat:Se agrego la visualizacion de detalles de calculo",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/0eca0b8eb115b75929aacc3a3c8a7ef2236545e8"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 30,
+      "deletions": 4,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "5721825bd2bbda26037163f633739062e7af718d",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-03T17:44:09.000Z",
+      "message": "feat:Se grego mensaje para que el usuario ingrese valores validos",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/5721825bd2bbda26037163f633739062e7af718d"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2025-05-03"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "89eb04fab093e5746a70245029543244331e568f",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-04T06:01:54.000Z",
+      "message": "feat: se agrego funciones para el Añadir combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/89eb04fab093e5746a70245029543244331e568f"
+    },
+    "stats": {
+      "total": 413,
+      "additions": 258,
+      "deletions": 155,
+      "date": "2025-05-04"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "237da889e0e1e9f22dad0191966e0780662adfcc",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-05T15:41:44.000Z",
+      "message": "feat: se la variable fila en el presenter.js",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/237da889e0e1e9f22dad0191966e0780662adfcc"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2025-05-05"
+    },
+    "coverage": 0,
+    "test_count": 0
+  },
+  {
+    "sha": "95902371db4cc806fa56c1bad81db6c9a9be94ea",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-05T21:17:08.000Z",
+      "message": "feat: se agrego la lista de conductores despues de registrarlos",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/95902371db4cc806fa56c1bad81db6c9a9be94ea"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 32,
+      "deletions": 6,
+      "date": "2025-05-05"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "b0a712a2b26d47ee28f3df31f7ef367f30a724cf",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-06T00:36:17.000Z",
+      "message": "feat: se agrego el tiempo que tardara el conductor en cargar despues de registrarse",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/b0a712a2b26d47ee28f3df31f7ef367f30a724cf"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 4,
+      "deletions": 3,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "ac09f92183aba12573147e3a2bb77992eeb017f8",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-06T03:01:28.000Z",
+      "message": "feat:Se agrego el seleccionar el tipo de combustible en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/ac09f92183aba12573147e3a2bb77992eeb017f8"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 20
+  },
+  {
+    "sha": "63a861fb27aa1a74a838eb7eb04283d4ce5bf517",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-06T03:13:47.000Z",
+      "message": "feat:Deberia registrar el tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/63a861fb27aa1a74a838eb7eb04283d4ce5bf517"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 28,
+      "deletions": 5,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "3b7087b77c4acd5617aa2a1b241616fab807476f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-06T03:20:21.000Z",
+      "message": "feat:Se agrego la visualizacion del tipo de combustible en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/3b7087b77c4acd5617aa2a1b241616fab807476f"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 6,
+      "deletions": 4,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "c4cd633c84305dda5cf9758e8636b9e7f78ae294",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-06T04:36:47.000Z",
+      "message": "style: añadimos un css para el index.html",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c4cd633c84305dda5cf9758e8636b9e7f78ae294"
+    },
+    "stats": {
+      "total": 216,
+      "additions": 181,
+      "deletions": 35,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "acbd3d0683cb9d5c72d27125f5f2acc9416560fe",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-06T11:31:41.000Z",
+      "message": "Style: Añadimos un css, una nueva apariencia a index2",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/acbd3d0683cb9d5c72d27125f5f2acc9416560fe"
+    },
+    "stats": {
+      "total": 149,
+      "additions": 143,
+      "deletions": 6,
+      "date": "2025-05-06"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "b65ab8cf5a9b6959f45d3c34dec9e8fcbaab5061",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T02:55:38.000Z",
+      "message": "fix:Se arreglaron errores al momento de ingresar combustible y agregar a fila",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/b65ab8cf5a9b6959f45d3c34dec9e8fcbaab5061"
+    },
+    "stats": {
+      "total": 70,
+      "additions": 59,
+      "deletions": 11,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "b917f34bc5b9527fbfd966b71df8a0ba5d6d5aeb",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T03:16:13.000Z",
+      "message": "feat:Se agrego la lista de surtidtores en la pagina principal",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/b917f34bc5b9527fbfd966b71df8a0ba5d6d5aeb"
+    },
+    "stats": {
+      "total": 643,
+      "additions": 303,
+      "deletions": 340,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "51c581bdc9b63c89662ded0ca15f06345c634c32",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T03:32:47.000Z",
+      "message": "feat:Se agrego en la interfaz el seleccionar mas de un tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/51c581bdc9b63c89662ded0ca15f06345c634c32"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 7,
+      "deletions": 8,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 21
+  },
+  {
+    "sha": "7174cc39080c6ee6d74a60373d1d90de2504c54b",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T04:00:19.000Z",
+      "message": "feat:Deberia agregar mas de un tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/7174cc39080c6ee6d74a60373d1d90de2504c54b"
+    },
+    "stats": {
+      "total": 555,
+      "additions": 248,
+      "deletions": 307,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "7cb96209dc26f3cfafefe3b26402dd6ee73d7322",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T04:14:31.000Z",
+      "message": "feat:Se guardan los tipos de combustibles por estacion de servicio",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/7cb96209dc26f3cfafefe3b26402dd6ee73d7322"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 24,
+      "deletions": 16,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "0e81adc1328a8439139f8670b3afc99097264119",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T12:30:13.000Z",
+      "message": "feat:Se agrego la visualizacion de todos los tipos de combustibles",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/0e81adc1328a8439139f8670b3afc99097264119"
+    },
+    "stats": {
+      "total": 26234,
+      "additions": 3776,
+      "deletions": 22458,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "5eb6ae7864b2250f41aa5a34d4fa359743070a2d",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-22T14:24:27.000Z",
+      "message": "refactor: Estrucuturacion de los archivos de manera que todo quede mas ordenado y mas entendible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/5eb6ae7864b2250f41aa5a34d4fa359743070a2d"
+    },
+    "stats": {
+      "total": 87,
+      "additions": 49,
+      "deletions": 38,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "6476e8e65aa933d30e2aefc05d4583678b5a8ae1",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T19:17:57.000Z",
+      "message": "feat:Se agrego la visualizacion de los surtidores recien creados",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/6476e8e65aa933d30e2aefc05d4583678b5a8ae1"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "cc504582f5c62cc6e44452ab444acd343b56e128",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T19:30:57.000Z",
+      "message": "feat:Se agrego en la visualizacion el agregar combustible por tipo",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/cc504582f5c62cc6e44452ab444acd343b56e128"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 18,
+      "deletions": 8,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 22
+  },
+  {
+    "sha": "e18800dade1507bca0ccb45a7dd5de2d278c2d12",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T20:05:32.000Z",
+      "message": "feat:Deberia agregar combustible a una estacion de servicio con combustible ya existente",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/e18800dade1507bca0ccb45a7dd5de2d278c2d12"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 61,
+      "deletions": 1,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "a2dfd450ffc13ce88a0e0be067e6ed4d18e22dd8",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T20:17:09.000Z",
+      "message": "feat:Se agrego la visualizacion del combustible en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a2dfd450ffc13ce88a0e0be067e6ed4d18e22dd8"
+    },
+    "stats": {
+      "total": 84,
+      "additions": 52,
+      "deletions": 32,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "b9b6889edb34206e14c404d3acdc4eb9a18dc68f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-22T20:28:06.000Z",
+      "message": "feat:Se agrego mensaje de confirmacion para el combustible agregado",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/b9b6889edb34206e14c404d3acdc4eb9a18dc68f"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 13,
+      "deletions": 7,
+      "date": "2025-05-22"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "a9f775bf3b329cde266daaf9822ca94b9217fc3f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T00:31:28.000Z",
+      "message": "fix:Se arreglaron errores de duplicado al registrar surtidor",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/a9f775bf3b329cde266daaf9822ca94b9217fc3f"
+    },
+    "stats": {
+      "total": 78,
+      "additions": 43,
+      "deletions": 35,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "05b097d9bc29ca576317a4a7e0ef30ec5ea41db5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T00:52:09.000Z",
+      "message": "feat:Se agrego el boton  de calcular cola en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/05b097d9bc29ca576317a4a7e0ef30ec5ea41db5"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 24,
+      "deletions": 1,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "8c3dceb3ee931a7f4ea26df45f9af0dd6c9508c2",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T00:56:10.000Z",
+      "message": "feat:Se agrego la visualizacion de ver detalle en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/8c3dceb3ee931a7f4ea26df45f9af0dd6c9508c2"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "2f7586debd9f4c755e86178145ecd4cd6df1bc23",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T01:08:55.000Z",
+      "message": "feat:Se agrego el calcular cola automatizado por surtidor",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/2f7586debd9f4c755e86178145ecd4cd6df1bc23"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 36,
+      "deletions": 14,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "e61432290a4fc5d756785703ab19e63d1a691243",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T01:18:09.000Z",
+      "message": "feat:Se agrego la visualizacion de seleccionar el tipo de combustible por el que la persona hara cola",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/e61432290a4fc5d756785703ab19e63d1a691243"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "f9b957e1142be59e82374c924dc1ae03b431e532",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T01:28:46.000Z",
+      "message": "feat:Se agrego el tipo de combustible por el que el usuario esta haciendo la cola",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/f9b957e1142be59e82374c924dc1ae03b431e532"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 15,
+      "deletions": 11,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "f26abda344badf9a6834858be9da1bb2b85119e5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T01:33:33.000Z",
+      "message": "feat:Se calcula la estimacion por tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/f26abda344badf9a6834858be9da1bb2b85119e5"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 34,
+      "deletions": 23,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "bc34508632d3126572396c538a372522fed9eaf6",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-23T01:38:43.000Z",
+      "message": "feat:Si no hay combustible lanza un mensaje de que no hay combustible disponible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/bc34508632d3126572396c538a372522fed9eaf6"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 14,
+      "deletions": 2,
+      "date": "2025-05-23"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "fc1aa18084a98491a3093ab06d157c3cc39ec2d0",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-25T13:47:46.000Z",
+      "message": "feat: Las estaciones de combustible ya cuentan con 2 tipos de combustible y las calculadores ya tienen en cuenta las personas que estan en fila ya que tiene asigndo un combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/fc1aa18084a98491a3093ab06d157c3cc39ec2d0"
+    },
+    "stats": {
+      "total": 128,
+      "additions": 75,
+      "deletions": 53,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 23
+  },
+  {
+    "sha": "14a34c520992256d79c15d3032636b73231f2b2a",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-25T17:33:24.000Z",
+      "message": "test, refactor: implementacion de generar ticket, verificar si existe el ticket, tambien filtar por estacion",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/14a34c520992256d79c15d3032636b73231f2b2a"
+    },
+    "stats": {
+      "total": 498,
+      "additions": 328,
+      "deletions": 170,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 28
+  },
+  {
+    "sha": "c6ef5f56aadb78e845714665a7241a6227bfd26c",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-25T21:38:41.000Z",
+      "message": "feat: se agrego el cuestionario de ticket en el front",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c6ef5f56aadb78e845714665a7241a6227bfd26c"
+    },
+    "stats": {
+      "total": 102,
+      "additions": 99,
+      "deletions": 3,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 28
+  },
+  {
+    "sha": "73977310add5405701ac977b6fb3908adc8191d5",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-25T21:51:12.000Z",
+      "message": "feat: se agrego la funcion de mostrar tickets",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/73977310add5405701ac977b6fb3908adc8191d5"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 20,
+      "deletions": 3,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 28
+  },
+  {
+    "sha": "e8a4ac8ae6ae40d823779d8fb3c78f0d142baefc",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-25T21:56:43.000Z",
+      "message": "feat: se agrego obtenerTodosLosTicketsAgrupados",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/e8a4ac8ae6ae40d823779d8fb3c78f0d142baefc"
+    },
+    "stats": {
+      "total": 52,
+      "additions": 51,
+      "deletions": 1,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 30
+  },
+  {
+    "sha": "c7fdebae79d303543dc69fbdadf42995fd905c84",
+    "author": "Leonardo Koller",
+    "commit": {
+      "date": "2025-05-25T22:22:13.000Z",
+      "message": "feat: se agrego la funcion de eliminar ticket",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c7fdebae79d303543dc69fbdadf42995fd905c84"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 45,
+      "deletions": 2,
+      "date": "2025-05-25"
+    },
+    "coverage": 0,
+    "test_count": 33
+  },
+  {
+    "sha": "db24a111ad3f1dad29d8461e3229d6676b30fd57",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-26T00:30:26.000Z",
+      "message": "refactor, fix: Arreglar el error de que el combustible de los tikets debe ser segun l estacion y su tipo de combustible",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/db24a111ad3f1dad29d8461e3229d6676b30fd57"
+    },
+    "stats": {
+      "total": 414,
+      "additions": 205,
+      "deletions": 209,
+      "date": "2025-05-26"
+    },
+    "coverage": 0,
+    "test_count": 33
+  },
+  {
+    "sha": "7f585d248295cdf18dc053d4d271461f84f23ebc",
+    "author": "Jesus Ariel Mamani Gutierrez",
+    "commit": {
+      "date": "2025-05-27T04:58:30.000Z",
+      "message": "refactor, fix: Reestructuracion del presenter y presenter2 a una mejor estrcutura y organizacion de los archivos presenter y correccion de errores de funcionalidades que no funcionaban",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/7f585d248295cdf18dc053d4d271461f84f23ebc"
+    },
+    "stats": {
+      "total": 1741,
+      "additions": 991,
+      "deletions": 750,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "2f467561163a607e816f57feb8982654ed2cb51c",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T05:39:37.000Z",
+      "message": "feat:Se oculto el formulario de agregar combustible de la pantalla principal",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/2f467561163a607e816f57feb8982654ed2cb51c"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 1,
+      "deletions": 3,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "433b514e7de0b782929b3f4b7a7c00c9d739cb72",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T05:53:20.000Z",
+      "message": "feat:Se agrego el boton de registrar combustible en cada surtidor visualizado en la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/433b514e7de0b782929b3f4b7a7c00c9d739cb72"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 56,
+      "deletions": 1,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "def33ddcbdaa86716622a7418cf1ed82016fa377",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:03:43.000Z",
+      "message": "feat:Se agrego la visualizacion del boton de agregar fila en cada surtidor registrado",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/def33ddcbdaa86716622a7418cf1ed82016fa377"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 32,
+      "deletions": 2,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "413aa4d0b2552449d93d6cbc54a4358ae95f4a99",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:06:33.000Z",
+      "message": "feat:Se agrego la visualizacion de generar ticket en cada estacion de servicio",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/413aa4d0b2552449d93d6cbc54a4358ae95f4a99"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "cf28e77a3e0d03b1637a92c58685bd7ba0fddce4",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:09:09.000Z",
+      "message": "feat:Se agrego el boton de volver para el formulario de generar ticket",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/cf28e77a3e0d03b1637a92c58685bd7ba0fddce4"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 30,
+      "deletions": 1,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "5f8af265d2989a256080e315e9e2f43c519a6f35",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:17:57.000Z",
+      "message": "feat:Se agrego el boton de calcular colas a la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/5f8af265d2989a256080e315e9e2f43c519a6f35"
+    },
+    "stats": {
+      "total": 51,
+      "additions": 50,
+      "deletions": 1,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "c0b811202133809aa095c5010e130e935c8790e5",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:36:00.000Z",
+      "message": "feat:Se agrego la visualizacion de todos los tickets",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/c0b811202133809aa095c5010e130e935c8790e5"
+    },
+    "stats": {
+      "total": 134,
+      "additions": 80,
+      "deletions": 54,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "4a3e1d9b0892a451a1ccaff847e3ea5ebe83beec",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:44:22.000Z",
+      "message": "feat:Se cambio el css para mejorar la interfaz de usuario",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/4a3e1d9b0892a451a1ccaff847e3ea5ebe83beec"
+    },
+    "stats": {
+      "total": 316,
+      "additions": 121,
+      "deletions": 195,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "3fa5be4dd0c71dfdc5514e497be1aac143b2d083",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-05-27T06:51:13.000Z",
+      "message": "feat:Se agrego un boton volver para la lista de tickets",
+      "url": "https://github.com/andresrev070303/proyecto_ing_software/commit/3fa5be4dd0c71dfdc5514e497be1aac143b2d083"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 23,
+      "deletions": 1,
+      "date": "2025-05-27"
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "18e96974ced645023a502d642e1780e68d19b9da",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-05T02:41:11.000Z",
+      "message": "feat: initial commit",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/18e96974ced645023a502d642e1780e68d19b9da"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-10-05"
+    },
+    "coverage": 0,
+    "test_count": 0
+  }
+]

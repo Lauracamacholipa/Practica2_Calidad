@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>A TODO GAS!</title>
+  <link rel="stylesheet" href="public/css/estilo1.css" />
+  <h1>Bienvenido a, A TODO GAS!</h1>
+</head>
+<body>
+
+  <!-- Botón para abrir ventana Registrar Estación -->
+  <button id="open-window-btn">Registrar Estación</button>
+  <button id="btn-ver-tickets">Ver todos los tickets</button>
+
+
+  <!-- Ventana Registrar Estación -->
+  <div id="new-window">
+    <h2>REGISTRO DE ESTACIÓN</h2>
+    <form id="form-registrar-estacion">
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+      <label for="direccion">Dirección:</label><br />
+      <input type="text" id="direccion" name="direccion" required /><br /><br />
+
+      <label for="zona">Zona:</label><br />
+      <select id="zona" name="zona" required>
+        <option value="Norte">Norte</option>
+        <option value="Sur">Sur</option>
+        <option value="Cercado">Cercado</option>
+        <option value="Quillacollo">Quillacollo</option>
+        <option value="Colcapirua">Colcapirua</option>
+      </select><br /><br />
+
+      <label>Tipos de Combustible:</label><br />
+      <div id="tipos-combustible">
+        <label><input type="checkbox" name="combustibles" value="Normal"> Normal</label>
+        <label><input type="checkbox" name="combustibles" value="Especial"> Especial</label>
+        <label><input type="checkbox" name="combustibles" value="Diesel"> Diesel</label>
+      </div><br />
+
+      <input type="submit" value="Registrar Estación" />
+    </form>
+    <div id="resultado-registro"></div>
+    <div id="lista-estaciones-registradas"></div>
+    <button id="close-window-btn">Cerrar ventana</button>
+  </div>
+
+  <!-- Formulario Agregar Combustible -->
+  <div id="agregar-combustible-section" style="display: none;">
+    <h2>Agregar Combustible a Estación</h2>
+    <form id="form-agregar-combustible">
+      <label for="estacion">Seleccionar Estación:</label><br />
+      <select id="estacion" name="estacion" required></select><br /><br />
+
+      <label for="tipo-combustible">Tipo de Combustible:</label><br />
+      <select id="tipo-combustible" name="tipo-combustible" required>
+        <option value="Normal">Normal</option>
+        <option value="Especial">Especial</option>
+        <option value="Diesel">Diesel</option>
+      </select><br /><br />
+
+      <label for="cantidad">Cantidad (litros):</label><br />
+      <input type="number" id="cantidad" name="cantidad" min="1" required /><br /><br />
+
+      <input type="submit" value="Agregar Combustible" />
+    </form>
+    <div id="resultado-agregar-combustible"></div>
+    <div id="stock-actual"></div>
+    <button id="btn-volver-estaciones">Volver</button>
+
+    
+  </div>
+
+  <!-- Filtros -->
+<div id="filtros-estaciones">
+  <h3>Filtrar Estaciones</h3>
+
+  <!-- Filtro por Zona -->
+  <div>
+    <label for="filtro-zona">Zona:</label>
+    <select id="filtro-zona">
+      <option value="todos">Todas</option>
+      <option value="Norte">Norte</option>
+      <option value="Sur">Sur</option>
+      <option value="Cercado">Cercado</option>
+      <option value="Quillacollo">Quillacollo</option>
+      <option value="Colcapirua">Colcapirua</option>
+    </select>
+  </div>
+
+  <!-- Filtro por Combustible -->
+  <div>
+    <label for="filtro-combustible">Tipo de Combustible:</label>
+    <select id="filtro-combustible">
+      <option value="todos">Todos</option>
+      <option value="Normal">Normal</option>
+      <option value="Especial">Especial</option>
+      <option value="Diesel">Diesel</option>
+    </select>
+  </div>
+
+  <!-- Checkbox Ordenar -->
+  
+<div>
+  <label>
+    <input type="checkbox" id="checkbox-ordenar" />
+    Ordenar por cantidad total de combustible (de mayor a menor)
+  </label>
+</div>
+
+  <!-- Botón Resetear -->
+  <button id="btn-reset-filtros">Mostrar todas</button>
+</div>
+<!-- Sección de estaciones -->
+<div id="seccion-estaciones">
+  <h2>Estaciones Registradas</h2>
+  <div id="lista-estaciones">
+    <!-- Aquí aparecerán las estaciones dinámicamente -->
+  </div>
+</div>
+<div id="lista-tickets" style="display: none;">
+
+  <button id="btn-volver-estaciones-tickets">Volver</button>
+
+</div>
+
+
+<!-- Formulario Agregar a Fila -->
+<div id="agregar-fila-section" style="display: none;">
+  <h2>Agregar a Fila de Espera</h2>
+  <form id="form-agregar-fila">
+    <label for="estacion-fila">Seleccionar Estación:</label><br />
+    <select id="estacion-fila" name="estacion-fila" required></select><br /><br />
+
+    <label for="nombre-conductor">Nombre del conductor:</label><br />
+    <input type="text" id="nombre-conductor" name="nombre-conductor" required /><br /><br />
+
+    <label for="placa-vehiculo">Placa del vehículo:</label><br />
+    <input type="text" id="placa-vehiculo" name="placa-vehiculo" required /><br /><br />
+
+    <label for="tipo-combustible-fila">Tipo de Combustible:</label><br />
+    <select id="tipo-combustible-fila" name="tipo-combustible-fila" required>
+      <option value="Normal">Normal</option>
+      <option value="Especial">Especial</option>
+      <option value="Diesel">Diesel</option>
+    </select><br /><br />
+
+    <input type="submit" value="Agregar a Fila" />
+  </form>
+  <div id="resultado-agregar-fila"></div>
+  <button id="btn-volver-estaciones-fila">Volver</button>
+
+</div>
+<!-- Formulario Generar Ticket -->
+<div id="generar-ticket-section" style="display: none;">
+
+  <h2>Generar Ticket</h2>
+  <form id="form-generar-ticket">
+    <label for="ticket-estacion">Estación:</label><br />
+    <select id="ticket-estacion" required></select><br /><br />
+
+    <label for="ticket-nombre">Nombre del conductor:</label><br />
+    <input type="text" id="ticket-nombre" required><br /><br />
+
+    <label for="ticket-placa">Placa del vehículo:</label><br />
+    <input type="text" id="ticket-placa" required><br /><br />
+
+    <label for="ticket-combustible">Tipo de Combustible:</label><br />
+    <select id="ticket-combustible" required>
+      <option value="Normal">Normal</option>
+      <option value="Especial">Especial</option>
+      <option value="Diesel">Diesel</option>
+    </select><br /><br />
+
+    <label for="ticket-fecha">Fecha de carga:</label><br />
+    <input type="date" id="ticket-fecha" required><br /><br />
+
+    <input type="submit" value="Generar Ticket">
+  </form>
+  <div id="resultado-generar-ticket"></div>
+  <button id="btn-volver-estaciones-ticket">Volver</button>
+
+</div>
+<button id="limpiar-localstorage">Limpiar datos</button>
+  <!-- Resto de tu contenido... (tickets, colas, filtros) -->
+  <!-- Los dejamos como están -->
+
+  <!-- Script principal -->
+  <script type="module" src="./src/main.js"></script>
+  <
+<script>
+  document.getElementById("limpiar-localstorage")?.addEventListener("click", () => {
+    localStorage.clear(); // o localStorage.removeItem("nuevasEstaciones")
+    alert("Datos borrados del localStorage");
+  });
+</script>
+</body>
+</html>

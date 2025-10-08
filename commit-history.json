@@ -1715,5 +1715,22 @@
     },
     "coverage": 0,
     "test_count": 2
+  },
+  {
+    "sha": "6013b9ed6164e5429e60d818624b26877942d9fa",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:28:02.000Z",
+      "message": "test-Laura: Agregar test para estación en localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6013b9ed6164e5429e60d818624b26877942d9fa"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 3
   }
 ]

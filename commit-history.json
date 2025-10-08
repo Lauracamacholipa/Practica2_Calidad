@@ -1698,5 +1698,22 @@
     },
     "coverage": 0,
     "test_count": 1
+  },
+  {
+    "sha": "d5abafa68ec7aea8c732a027a74275756ad9e1a3",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:25:50.000Z",
+      "message": "test-Laura: Agregar test para crear filaEspera automáticamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/d5abafa68ec7aea8c732a027a74275756ad9e1a3"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 2
   }
 ]

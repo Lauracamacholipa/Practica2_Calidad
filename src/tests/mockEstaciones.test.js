@@ -43,4 +43,22 @@ describe('agregarAfila() - Test 1', () => {
     expect(posicion).toBe(2); // Posición 2 (ya hay 1 en fila)
     expect(typeof posicion).toBe('number');
   });
+
+  test('debe crear filaEspera si no existe en estación mock', () => {
+    // Quitar filaEspera de una estación
+    estacionesLista[0].filaEspera = undefined;
+
+    const datosConductor = {
+        nombre: "Test Sin Fila",
+        placa: "NOFILE1",
+        tipo: "Diesel"
+    };
+
+    const posicion = agregarAfila("Gulf Norte", datosConductor);
+
+    expect(posicion).toBe(1); // Primera posición
+    expect(estacionesLista[0].filaEspera).toBeDefined();
+    expect(estacionesLista[0].filaEspera.length).toBe(1);
+    });
+
 });

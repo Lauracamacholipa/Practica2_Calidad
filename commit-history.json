@@ -1681,5 +1681,22 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "4c9bcbae1ada87200dbf6c89c982a72188d59e93",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:24:05.000Z",
+      "message": "test-Laura: Agregar primer test para agregarAfila - conductor a estación mock",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/4c9bcbae1ada87200dbf6c89c982a72188d59e93"
+    },
+    "stats": {
+      "total": 46,
+      "additions": 46,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 1
   }
 ]

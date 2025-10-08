@@ -2021,5 +2021,22 @@
     },
     "coverage": 0,
     "test_count": 16
+  },
+  {
+    "sha": "b8ca32d3453adc8a13c8aee18ef4abd1a5ebc844",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:50:57.000Z",
+      "message": "test: implementacion de la ruta 6: Zona + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/b8ca32d3453adc8a13c8aee18ef4abd1a5ebc844"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 17
   }
 ]

@@ -1919,5 +1919,22 @@
     },
     "coverage": 0,
     "test_count": 12
+  },
+  {
+    "sha": "0d256219aa5c07f94d71551c3de63487f75ee503",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T17:26:35.000Z",
+      "message": "test: crea test debería devolver todas las estaciones si se pasa todos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/0d256219aa5c07f94d71551c3de63487f75ee503"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 13
   }
 ]

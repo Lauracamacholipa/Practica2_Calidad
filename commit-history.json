@@ -2038,5 +2038,22 @@
     },
     "coverage": 0,
     "test_count": 17
+  },
+  {
+    "sha": "726594578f06ee0bf26a92d0e6f7c3775bf9a20d",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:51:42.000Z",
+      "message": "test: implementacion de la ruta 7: Combustible + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/726594578f06ee0bf26a92d0e6f7c3775bf9a20d"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 18
   }
 ]

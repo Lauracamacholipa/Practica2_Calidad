@@ -1732,5 +1732,22 @@
     },
     "coverage": 0,
     "test_count": 3
+  },
+  {
+    "sha": "c05ff10769f667f24852cb4bdbe12f31772ac921",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:59:08.000Z",
+      "message": "test-Laura: debe retornar false si estación no existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/c05ff10769f667f24852cb4bdbe12f31772ac921"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 4
   }
 ]

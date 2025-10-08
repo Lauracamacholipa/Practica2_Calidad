@@ -86,4 +86,16 @@ describe('agregarAfila() - Test 1', () => {
     expect(localStorageMock.setItem).toHaveBeenCalled();
     });
 
+    test('debe retornar false si estación no existe', () => {
+    const datosConductor = {
+      nombre: "Test No Existe",
+      placa: "NOEXIST",
+      tipo: "Normal"
+    };
+
+    const resultado = agregarAfila("Estación Inexistente", datosConductor);
+
+    expect(resultado).toBe(false);
+  });
+
 });

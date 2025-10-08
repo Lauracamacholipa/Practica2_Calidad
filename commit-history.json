@@ -2004,5 +2004,22 @@
     },
     "coverage": 0,
     "test_count": 15
+  },
+  {
+    "sha": "c5d716a9456969af4c4f72b974c33a5be64c7638",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:50:00.000Z",
+      "message": "test: implementacion de la ruta 5: Zona + Combustible",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/c5d716a9456969af4c4f72b974c33a5be64c7638"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 16
   }
 ]

@@ -88,4 +88,15 @@ describe('aplicarFiltrosCombinados', () => {
     expect(resultado).toHaveLength(mockEstaciones.length);
     expect(resultado).toEqual(expect.arrayContaining(mockEstaciones));
   });
+
+  // Ruta 5: Zona + Combustible
+  it('debería filtrar por zona y combustible', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "Normal",
+      ordenar: false
+    });
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
+  });
 });

@@ -34,7 +34,7 @@ const mockEstaciones = [
   }
 ];
 
-// ✅ Mock correcto apuntando al módulo donde se importa obtenerEstaciones
+// Mock correcto apuntando al módulo donde se importa obtenerEstaciones
 jest.mock('../data/mockEstaciones.js', () => {
   const originalModule = jest.requireActual('../data/mockEstaciones.js');
   return {
@@ -53,5 +53,16 @@ describe('aplicarFiltrosCombinados', () => {
 
     expect(resultado).toHaveLength(1);
     expect(resultado[0].nombre).toBe("Estación Norte");
+  });
+  it('debería devolver todas las estaciones si se pasa "todos"', () => {
+    const { aplicarFiltrosCombinados } = require('../utils/combustible.filters.js');
+
+    const resultado = aplicarFiltrosCombinados({
+      zona: "todos",
+      combustible: "todos",
+      ordenar: false
+    });
+
+    expect(resultado).toHaveLength(mockEstaciones.length);
   });
 });

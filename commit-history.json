@@ -2055,5 +2055,22 @@
     },
     "coverage": 0,
     "test_count": 18
+  },
+  {
+    "sha": "e9f67e3ce5aaf8b7f511aadd7ab36146f26db067",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:52:25.000Z",
+      "message": "test: implementacion de la ruta 8: Zona + Combustible + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e9f67e3ce5aaf8b7f511aadd7ab36146f26db067"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 19
   }
 ]

@@ -44,25 +44,15 @@ jest.mock('../data/mockEstaciones.js', () => {
 });
 
 describe('aplicarFiltrosCombinados', () => {
-  it('debería filtrar por zona, tipo de combustible y ordenar correctamente', () => {
-    const resultado = aplicarFiltrosCombinados({
-      zona: "Norte",
-      combustible: "Normal",
-      ordenar: true
-    });
-
-    expect(resultado).toHaveLength(1);
-    expect(resultado[0].nombre).toBe("Estación Norte");
-  });
-  it('debería devolver todas las estaciones si se pasa "todos"', () => {
-    const { aplicarFiltrosCombinados } = require('../utils/combustible.filters.js');
-
+  // Ruta 1: Ningún filtro aplicado
+  it('debería devolver todas las estaciones sin filtros', () => {
     const resultado = aplicarFiltrosCombinados({
       zona: "todos",
       combustible: "todos",
       ordenar: false
     });
-
     expect(resultado).toHaveLength(mockEstaciones.length);
+    expect(resultado).toEqual(expect.arrayContaining(mockEstaciones));
   });
+
 });

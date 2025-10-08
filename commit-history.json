@@ -1936,5 +1936,22 @@
     },
     "coverage": 0,
     "test_count": 13
+  },
+  {
+    "sha": "bc3948ff283734a78c8061923bc9addc7a1bdb10",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:45:10.000Z",
+      "message": "test: implementacion del test 1: Ningún filtro aplicado",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/bc3948ff283734a78c8061923bc9addc7a1bdb10"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 4,
+      "deletions": 14,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 12
   }
 ]

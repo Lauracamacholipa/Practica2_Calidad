@@ -1783,5 +1783,22 @@
     },
     "coverage": 0,
     "test_count": 6
+  },
+  {
+    "sha": "320fc77212b6bfbc204d7321e2a7a46990a49a70",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:13:06.000Z",
+      "message": "test-Laura: debe agregar combustible a estación mock cuando combustible existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/320fc77212b6bfbc204d7321e2a7a46990a49a70"
+    },
+    "stats": {
+      "total": 95,
+      "additions": 69,
+      "deletions": 26,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 7
   }
 ]

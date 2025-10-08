@@ -6,8 +6,8 @@ const localStorageMock = {
 };
 global.localStorage = localStorageMock;
 
-// Importar funciones
-import { agregarAfila, estacionesLista } from '../data/mockEstaciones.js';
+// Importar funciones UNA SOLA VEZ al inicio
+import { agregarAfila, agregarCombustibleExistente, estacionesLista } from '../data/mockEstaciones.js';
 
 describe('agregarAfila() - Test 1', () => {
   beforeEach(() => {
@@ -59,9 +59,9 @@ describe('agregarAfila() - Test 1', () => {
     expect(posicion).toBe(1); // Primera posición
     expect(estacionesLista[0].filaEspera).toBeDefined();
     expect(estacionesLista[0].filaEspera.length).toBe(1);
-    });
+  });
 
-    test('debe agregar conductor a estación en localStorage', () => {
+  test('debe agregar conductor a estación en localStorage', () => {
     const estacionLocalStorage = {
         nombre: "Estación LocalStorage", 
         zona: "Norte",
@@ -84,9 +84,9 @@ describe('agregarAfila() - Test 1', () => {
 
     expect(posicion).toBe(1);
     expect(localStorageMock.setItem).toHaveBeenCalled();
-    });
+  });
 
-    test('debe retornar false si estación no existe', () => {
+  test('debe retornar false si estación no existe', () => {
     const datosConductor = {
       nombre: "Test No Existe",
       placa: "NOEXIST",
@@ -112,9 +112,9 @@ describe('agregarAfila() - Test 1', () => {
     const resultado = agregarAfila("Estación Que No Existe En Mock", datosConductor);
 
     expect(resultado).toBe(false);
-    });
+  });
 
-    test('debe agregar conductor a estación en localStorage con fila existente', () => {
+  test('debe agregar conductor a estación en localStorage con fila existente', () => {
     const estacionLocalStorage = {
         nombre: "Estación LocalStorage Con Fila", 
         zona: "Norte",
@@ -139,6 +139,49 @@ describe('agregarAfila() - Test 1', () => {
 
     expect(posicion).toBe(2); // ← POSICIÓN 2 (ya hay 1 en fila)
     expect(localStorageMock.setItem).toHaveBeenCalled();
-    });
+  });
+});
+
+// SEGUNDO DESCRIBE - SIN IMPORTAR NUEVAMENTE
+describe('agregarCombustibleExistente() - Test 2', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    localStorageMock.getItem.mockReturnValue(JSON.stringify([]));
+    
+    // Configurar datos de prueba limpios
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      {
+        nombre: "Gulf Norte",
+        direccion: "Av. América #1256",
+        zona: "Norte",
+        combustibles: [
+          { tipo: "Normal", cantidad: 850 },
+          { tipo: "Diesel", cantidad: 600 }
+        ],
+        filaEspera: [],
+        filaTickets: []
+      },
+      {
+        nombre: "YPFB Cala Cala", 
+        direccion: "Av. Melchor Pérez #245",
+        zona: "Norte",
+        combustibles: [
+          { tipo: "Especial", cantidad: 720 },
+          { tipo: "Diesel", cantidad: 550 }
+        ],
+        filaEspera: [],
+        filaTickets: []
+      }
+    );
+  });
+
+  // CAMINO 1: Estación en MOCK + Combustible EXISTE → Éxito
+  test('debe agregar combustible a estación mock cuando combustible existe', () => {
+    const resultado = agregarCombustibleExistente("Gulf Norte", "Normal", 100);
+    
+    expect(resultado).toBe("Se agregó 100 litros a Normal");
+    expect(estacionesLista[0].combustibles[0].cantidad).toBe(950); // 850 + 100
+  });
 
 });

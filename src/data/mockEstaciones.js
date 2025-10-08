@@ -210,28 +210,28 @@ export function obtenerCantidadCombustible(nombreEstacion) {
 }
 
 export function agregarCombustibleExistente(nombreEstacion, tipo, cantidad) {
-  const nombreLower = nombreEstacion.toLowerCase();
-  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower);
-  let enMock = true;
+  const nombreLower = nombreEstacion.toLowerCase(); // [1]
+  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower); // [2]
+  let enMock = true; // [3]
 
-  if (!estacion) {
-    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
-    estacion = adicionales.find(e => e.nombre.toLowerCase() === nombreLower);
-    enMock = false;
+  if (!estacion) { // [4] DECISIÓN 1
+    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]"); // [5]
+    estacion = adicionales.find(e => e.nombre.toLowerCase() === nombreLower); // [6]
+    enMock = false; // [7]
 
-    if (!estacion) return "Estación no encontrada";
+    if (!estacion) return "Estación no encontrada"; // [8] DECISIÓN 2 -> FIN
 
-    const combustible = estacion.combustibles.find(c => c.tipo === tipo);
-    if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`;
+    const combustible = estacion.combustibles.find(c => c.tipo === tipo); // [9]
+    if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`; // [10] DECISIÓN 3 -> FIN
 
-    combustible.cantidad += cantidad;
-    localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales));
-    return `Se agregó ${cantidad} litros a ${tipo}`;
+    combustible.cantidad += cantidad; // [11]
+    localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales)); // [12]
+    return `Se agregó ${cantidad} litros a ${tipo}`; // [13]
   }
 
-  const combustible = estacion.combustibles.find(c => c.tipo === tipo);
-  if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`;
+  const combustible = estacion.combustibles.find(c => c.tipo === tipo); // [14]
+  if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`; // [15] DECISIÓN 4 -> [16]
 
-  combustible.cantidad += cantidad;
-  return `Se agregó ${cantidad} litros a ${tipo}`;
+  combustible.cantidad += cantidad; // [17]
+  return `Se agregó ${cantidad} litros a ${tipo}`; // [18]
 }

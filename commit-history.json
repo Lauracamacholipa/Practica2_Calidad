@@ -1868,5 +1868,73 @@
     },
     "coverage": 0,
     "test_count": 11
+  },
+  {
+    "sha": "3adde0269d718bdc99df00100e7c2a8a880a3615",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:09:02.000Z",
+      "message": "test: crear estructura base para aplicarFiltrosCombinados",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/3adde0269d718bdc99df00100e7c2a8a880a3615"
+    },
+    "stats": {
+      "total": 2926,
+      "additions": 1153,
+      "deletions": 1773,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
+  },
+  {
+    "sha": "e48113749dd848d1a190b45a5f206de2e10f170e",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:10:21.000Z",
+      "message": "test: agregar mock de obtenerEstaciones y datos de ejemplo",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e48113749dd848d1a190b45a5f206de2e10f170e"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 38,
+      "deletions": 3,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
+  },
+  {
+    "sha": "2ecc625343335e1fda13f191f8ae66cf302f4ac1",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:21:59.000Z",
+      "message": "test: correciones en las rutas y crear primer caso de pruebadebería filtrar por zona, tipo de combustible y ordenar correctamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2ecc625343335e1fda13f191f8ae66cf302f4ac1"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 32,
+      "deletions": 9,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 12
+  },
+  {
+    "sha": "0d256219aa5c07f94d71551c3de63487f75ee503",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T17:26:35.000Z",
+      "message": "test: crea test debería devolver todas las estaciones si se pasa todos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/0d256219aa5c07f94d71551c3de63487f75ee503"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 13
   }
 ]

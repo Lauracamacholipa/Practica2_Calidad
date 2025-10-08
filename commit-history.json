@@ -1800,5 +1800,22 @@
     },
     "coverage": 0,
     "test_count": 7
+  },
+  {
+    "sha": "a75828caee3f569b7fbf8165330592bf1dd300e0",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:14:30.000Z",
+      "message": "test-Laura: debe retornar error cuando tipo de combustible no existe en estación mock",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a75828caee3f569b7fbf8165330592bf1dd300e0"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 8
   }
 ]

@@ -184,4 +184,15 @@ describe('agregarCombustibleExistente() - Test 2', () => {
     expect(estacionesLista[0].combustibles[0].cantidad).toBe(950); // 850 + 100
   });
 
+   // CAMINO 2: Estación en MOCK + Combustible NO existe → Error tipo
+  test('debe retornar error cuando tipo de combustible no existe en estación mock', () => {
+    const resultado = agregarCombustibleExistente("Gulf Norte", "Super", 100);
+    
+    expect(resultado).toBe('Tipo de combustible "Super" no registrado en esta estación');
+    // Verificar que no se modificó ninguna cantidad
+    expect(estacionesLista[0].combustibles[0].cantidad).toBe(850);
+    expect(estacionesLista[0].combustibles[1].cantidad).toBe(600);
+  });
+
+
 });

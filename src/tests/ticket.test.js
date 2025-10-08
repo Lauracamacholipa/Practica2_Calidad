@@ -33,5 +33,9 @@ describe('generarTicket', () => {
     expect(() => generarTicket('', 'Gasolina', 'ABC123', 'Juan', '2025-10-08'))
       .toThrow('Todos los campos son obligatorios.');
   });
+   it('Lanza error si la estación no existe', () => {
+    expect(() => generarTicket('Estacion Fantasma', 'Gasolina', 'AAA111', 'Juan', '2025-10-08'))
+      .toThrow('Estación no encontrada.');
+  });
   
 });

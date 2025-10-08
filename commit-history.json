@@ -2106,5 +2106,22 @@
     },
     "coverage": 0,
     "test_count": 21
+  },
+  {
+    "sha": "1ee1a642deba22a3305658ddb616f6afa7b5af8f",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:25:29.000Z",
+      "message": "test: lanza error si la estacion no existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/1ee1a642deba22a3305658ddb616f6afa7b5af8f"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 22
   }
 ]

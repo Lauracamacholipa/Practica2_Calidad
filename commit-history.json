@@ -1834,5 +1834,22 @@
     },
     "coverage": 0,
     "test_count": 9
+  },
+  {
+    "sha": "7d5af4e3a76d0fe15295f8f416992f1d7cef8708",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:16:31.000Z",
+      "message": "test-Laura: debe retornar error cuando tipo de combustible no existe en estación localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/7d5af4e3a76d0fe15295f8f416992f1d7cef8708"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 10
   }
 ]

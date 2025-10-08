@@ -216,5 +216,27 @@ describe('agregarCombustibleExistente() - Test 2', () => {
     expect(localStorageMock.setItem).toHaveBeenCalled();
   });
 
+  // CAMINO 4: Estación en LOCALSTORAGE + Combustible NO existe → Error tipo
+  test('debe retornar error cuando tipo de combustible no existe en estación localStorage', () => {
+    const estacionLocalStorage = {
+      nombre: "Estación LocalStorage Test",
+      direccion: "Test 123", 
+      zona: "Test",
+      combustibles: [
+        { tipo: "Normal", cantidad: 500 },
+        { tipo: "Diesel", cantidad: 300 }
+      ],
+      filaEspera: [],
+      filaTickets: []
+    };
+
+    localStorageMock.getItem.mockReturnValue(JSON.stringify([estacionLocalStorage]));
+
+    const resultado = agregarCombustibleExistente("Estación LocalStorage Test", "Especial", 200);
+    
+    expect(resultado).toBe('Tipo de combustible "Especial" no registrado en esta estación');
+    expect(localStorageMock.setItem).not.toHaveBeenCalled();
+  });
+
 
 });

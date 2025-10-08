@@ -1953,5 +1953,22 @@
     },
     "coverage": 0,
     "test_count": 12
+  },
+  {
+    "sha": "a5e91f7a69312d5fdcc5518fced76c9cd0497f7f",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:46:40.000Z",
+      "message": "test: implementacion de la ruta 2:  Solo filtro por zona",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a5e91f7a69312d5fdcc5518fced76c9cd0497f7f"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 13
   }
 ]

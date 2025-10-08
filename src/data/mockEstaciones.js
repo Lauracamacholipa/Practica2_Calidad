@@ -235,3 +235,12 @@ export function agregarCombustibleExistente(nombreEstacion, tipo, cantidad) {
   combustible.cantidad += cantidad; // [17]
   return `Se agregó ${cantidad} litros a ${tipo}`; // [18]
 }
+export function obtenerEstaciones() {
+  try {
+    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
+    return [...estacionesLista, ...adicionales];
+  } catch (error) {
+    console.error("Error al obtener estaciones desde localStorage:", error);
+    return [...estacionesLista];
+  }
+}

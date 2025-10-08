@@ -1,5 +1,6 @@
 /*src/utils/combustible.filters.js */
-import { estacionesLista } from '../data/mockEstaciones.js';
+import { estacionesLista, obtenerEstaciones } from "../data/mockEstaciones.js";
+
 
 
 export function ordenarPorCantidad(estaciones = []) {

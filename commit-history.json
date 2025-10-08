@@ -1902,5 +1902,22 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "2ecc625343335e1fda13f191f8ae66cf302f4ac1",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:21:59.000Z",
+      "message": "test: correciones en las rutas y crear primer caso de pruebadebería filtrar por zona, tipo de combustible y ordenar correctamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2ecc625343335e1fda13f191f8ae66cf302f4ac1"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 32,
+      "deletions": 9,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 12
   }
 ]

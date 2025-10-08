@@ -1,4 +1,11 @@
-import { aplicarFiltrosCombinados } from '../src/utils/combustible.filters.js';
+beforeAll(() => {
+  global.localStorage = {
+    getItem: jest.fn(() => "[]"),
+    setItem: jest.fn(),
+  };
+});
+
+import { aplicarFiltrosCombinados } from '../utils/combustible.filters.js';
 
 const mockEstaciones = [
   {
@@ -27,8 +34,9 @@ const mockEstaciones = [
   }
 ];
 
-jest.mock('../src/utils/combustible.filters.js', () => {
-  const originalModule = jest.requireActual('../src/utils/combustible.filters.js');
+// ✅ Mock correcto apuntando al módulo donde se importa obtenerEstaciones
+jest.mock('../data/mockEstaciones.js', () => {
+  const originalModule = jest.requireActual('../data/mockEstaciones.js');
   return {
     ...originalModule,
     obtenerEstaciones: jest.fn(() => mockEstaciones)
@@ -36,9 +44,14 @@ jest.mock('../src/utils/combustible.filters.js', () => {
 });
 
 describe('aplicarFiltrosCombinados', () => {
-  it('debería ejecutarse correctamente con datos mockeados', () => {
-    const { aplicarFiltrosCombinados } = require('../src/utils/combustible.filters.js');
-    const resultado = aplicarFiltrosCombinados();
-    expect(resultado.length).toBe(mockEstaciones.length);
+  it('debería filtrar por zona, tipo de combustible y ordenar correctamente', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "Normal",
+      ordenar: true
+    });
+
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
   });
 });

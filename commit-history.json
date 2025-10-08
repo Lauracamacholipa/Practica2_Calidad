@@ -1936,5 +1936,141 @@
     },
     "coverage": 0,
     "test_count": 13
+  },
+  {
+    "sha": "bc3948ff283734a78c8061923bc9addc7a1bdb10",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:45:10.000Z",
+      "message": "test: implementacion del test 1: Ningún filtro aplicado",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/bc3948ff283734a78c8061923bc9addc7a1bdb10"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 4,
+      "deletions": 14,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 12
+  },
+  {
+    "sha": "a5e91f7a69312d5fdcc5518fced76c9cd0497f7f",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:46:40.000Z",
+      "message": "test: implementacion de la ruta 2:  Solo filtro por zona",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a5e91f7a69312d5fdcc5518fced76c9cd0497f7f"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 13
+  },
+  {
+    "sha": "d21ff4944725ef30585af4704da06e8ff90c8a4b",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:47:31.000Z",
+      "message": "test: implementacion de la ruta 3: Solo filtro por combustible",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/d21ff4944725ef30585af4704da06e8ff90c8a4b"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 14
+  },
+  {
+    "sha": "a087d92527b2a0300e49f3e5733c79e74758525e",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:48:15.000Z",
+      "message": "test: implementacion de la ruta4: Solo ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a087d92527b2a0300e49f3e5733c79e74758525e"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 15
+  },
+  {
+    "sha": "c5d716a9456969af4c4f72b974c33a5be64c7638",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:50:00.000Z",
+      "message": "test: implementacion de la ruta 5: Zona + Combustible",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/c5d716a9456969af4c4f72b974c33a5be64c7638"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 16
+  },
+  {
+    "sha": "b8ca32d3453adc8a13c8aee18ef4abd1a5ebc844",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:50:57.000Z",
+      "message": "test: implementacion de la ruta 6: Zona + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/b8ca32d3453adc8a13c8aee18ef4abd1a5ebc844"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 17
+  },
+  {
+    "sha": "726594578f06ee0bf26a92d0e6f7c3775bf9a20d",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:51:42.000Z",
+      "message": "test: implementacion de la ruta 7: Combustible + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/726594578f06ee0bf26a92d0e6f7c3775bf9a20d"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 18
+  },
+  {
+    "sha": "e9f67e3ce5aaf8b7f511aadd7ab36146f26db067",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:52:25.000Z",
+      "message": "test: implementacion de la ruta 8: Zona + Combustible + Ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e9f67e3ce5aaf8b7f511aadd7ab36146f26db067"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 19
   }
 ]

@@ -44,25 +44,92 @@ jest.mock('../data/mockEstaciones.js', () => {
 });
 
 describe('aplicarFiltrosCombinados', () => {
-  it('debería filtrar por zona, tipo de combustible y ordenar correctamente', () => {
-    const resultado = aplicarFiltrosCombinados({
-      zona: "Norte",
-      combustible: "Normal",
-      ordenar: true
-    });
-
-    expect(resultado).toHaveLength(1);
-    expect(resultado[0].nombre).toBe("Estación Norte");
-  });
-  it('debería devolver todas las estaciones si se pasa "todos"', () => {
-    const { aplicarFiltrosCombinados } = require('../utils/combustible.filters.js');
-
+  // Ruta 1: Ningún filtro aplicado
+  it('debería devolver todas las estaciones sin filtros', () => {
     const resultado = aplicarFiltrosCombinados({
       zona: "todos",
       combustible: "todos",
       ordenar: false
     });
-
     expect(resultado).toHaveLength(mockEstaciones.length);
+    expect(resultado).toEqual(expect.arrayContaining(mockEstaciones));
+  });
+// Ruta 2: Solo filtro por zona
+  it('debería filtrar solo por zona', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "todos",
+      ordenar: false
+    });
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
+  });
+   // Ruta 3: Solo filtro por combustible
+  it('debería filtrar solo por combustible', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "todos",
+      combustible: "Normal",
+      ordenar: false
+    });
+    expect(resultado).toHaveLength(2);
+    expect(resultado).toEqual(expect.arrayContaining([
+      expect.objectContaining({ nombre: "Estación Norte" }),
+      expect.objectContaining({ nombre: "Estación Cercado" })
+    ]));
+  });
+  // Ruta 4: Solo ordenar
+  it('debería ordenar todas las estaciones', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "todos",
+      combustible: "todos",
+      ordenar: true
+    });
+    // No se fuerza posición, solo que todos estén presentes
+    expect(resultado).toHaveLength(mockEstaciones.length);
+    expect(resultado).toEqual(expect.arrayContaining(mockEstaciones));
+  });
+
+  // Ruta 5: Zona + Combustible
+  it('debería filtrar por zona y combustible', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "Normal",
+      ordenar: false
+    });
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
+  });
+  // Ruta 6: Zona + Ordenar
+  it('debería filtrar por zona y ordenar', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "todos",
+      ordenar: true
+    });
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
+  });
+  // Ruta 7: Combustible + Ordenar
+  it('debería filtrar por combustible y ordenar', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "todos",
+      combustible: "Normal",
+      ordenar: true
+    });
+    expect(resultado).toHaveLength(2);
+    expect(resultado).toEqual(expect.arrayContaining([
+      expect.objectContaining({ nombre: "Estación Norte" }),
+      expect.objectContaining({ nombre: "Estación Cercado" })
+    ]));
+  });
+  // Ruta 8: Zona + Combustible + Ordenar
+  it('debería filtrar por zona, combustible y ordenar', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "Norte",
+      combustible: "Normal",
+      ordenar: true
+    });
+    expect(resultado).toHaveLength(1);
+    expect(resultado[0].nombre).toBe("Estación Norte");
   });
 });

@@ -114,4 +114,31 @@ describe('agregarAfila() - Test 1', () => {
     expect(resultado).toBe(false);
     });
 
+    test('debe agregar conductor a estación en localStorage con fila existente', () => {
+    const estacionLocalStorage = {
+        nombre: "Estación LocalStorage Con Fila", 
+        zona: "Norte",
+        direccion: "Test 123",
+        combustibles: [
+        { tipo: "Especial", cantidad: 720 }
+        ],
+        filaEspera: [
+        { nombre: "Conductor Existente", placa: "EXIST123", tipo: "Especial" }
+        ] // ← FILA YA EXISTE CON 1 ELEMENTO
+    };
+
+    localStorageMock.getItem.mockReturnValue(JSON.stringify([estacionLocalStorage]));
+
+    const datosConductor = {
+        nombre: "Conductor Nuevo LocalStorage",
+        placa: "NEWLOCAL",
+        tipo: "Especial"
+    };
+
+    const posicion = agregarAfila("Estación LocalStorage Con Fila", datosConductor);
+
+    expect(posicion).toBe(2); // ← POSICIÓN 2 (ya hay 1 en fila)
+    expect(localStorageMock.setItem).toHaveBeenCalled();
+    });
+
 });

@@ -98,4 +98,20 @@ describe('agregarAfila() - Test 1', () => {
     expect(resultado).toBe(false);
   });
 
+  test('debe manejar error en localStorage', () => {
+    localStorageMock.getItem.mockImplementation(() => {
+        throw new Error("Error de localStorage");
+    });
+
+    const datosConductor = {
+        nombre: "Test Error",
+        placa: "ERROR123",
+        tipo: "Normal"
+    };
+
+    const resultado = agregarAfila("Estación Que No Existe En Mock", datosConductor);
+
+    expect(resultado).toBe(false);
+    });
+
 });

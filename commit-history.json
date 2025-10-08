@@ -1749,5 +1749,22 @@
     },
     "coverage": 0,
     "test_count": 4
+  },
+  {
+    "sha": "3adda17ab57b80b583715218d001263477ebf7eb",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T05:02:02.000Z",
+      "message": "test-Laura: debe manejar error en localstorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/3adda17ab57b80b583715218d001263477ebf7eb"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 5
   }
 ]

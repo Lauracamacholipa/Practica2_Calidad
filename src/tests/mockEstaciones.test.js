@@ -238,5 +238,11 @@ describe('agregarCombustibleExistente() - Test 2', () => {
     expect(localStorageMock.setItem).not.toHaveBeenCalled();
   });
 
+  // CAMINO 5: Estación NO encontrada en ningún lado → Error estación
+  test('debe retornar error cuando estación no existe en mock ni localStorage', () => {
+    const resultado = agregarCombustibleExistente("Estación Inexistente", "Normal", 100);
+    
+    expect(resultado).toBe("Estación no encontrada");
+  });
 
 });

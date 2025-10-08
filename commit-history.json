@@ -1851,5 +1851,22 @@
     },
     "coverage": 0,
     "test_count": 10
+  },
+  {
+    "sha": "97a365a4bb124d24ccabcc8a39e148fb4b84edc0",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:17:27.000Z",
+      "message": "test-Laura: debe retornar error cuando estación no existe en mock ni localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/97a365a4bb124d24ccabcc8a39e148fb4b84edc0"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 11
   }
 ]

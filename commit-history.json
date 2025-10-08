@@ -2174,5 +2174,22 @@
     },
     "coverage": 0,
     "test_count": 26
+  },
+  {
+    "sha": "529373b9620434c8848e9f077434732be05dced0",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:49:18.000Z",
+      "message": "test:no lanza error y llama a la funcion guardarEnLocalStorage fin de tests de la funcion generarTicket",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/529373b9620434c8848e9f077434732be05dced0"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 27
   }
 ]

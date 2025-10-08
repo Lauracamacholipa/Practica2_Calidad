@@ -87,6 +87,21 @@ describe('generarTicket', () => {
     expect(nuevo.numeroTurno).toBe(1); 
     expect(nuevo.tipoCombustible).toBe('Gasolina');
   });
+   it('No lanza error y ejecuta guardarEnLocalStorage correctamente (rama try/catch)', () => {
+    const mockSet = jest.spyOn(localStorage, 'setItem');
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [],
+        filaEspera: []
+      }
+    ]);
+
+    const nuevo = generarTicket('Estacion Norte', 'Gasolina', 'PPP111', 'Laura', '2025-10-10');
+    expect(mockSet).toHaveBeenCalled(); 
+    expect(nuevo.nombre).toBe('Laura');
+    mockSet.mockRestore();
+  });
 
   
   

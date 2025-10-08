@@ -72,6 +72,21 @@ describe('generarTicket', () => {
       generarTicket('Estacion Norte', 'Gasolina', 'XYZ123', 'Juan', '2025-10-08')
     ).toThrow('Ya tiene un ticket activo.');
   });
+   it('Crea ticket cuando hay tickets de otra fecha o tipo (sin afectar turno)', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 5, tipoCombustible: 'Diesel', fechaCarga: '2025-10-07', nombre: 'Carlos' },
+          { numeroTurno: 6, tipoCombustible: 'Especial', fechaCarga: '2025-10-09', nombre: 'Lucia' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    const nuevo = generarTicket('Estacion Norte', 'Gasolina', 'AAA999', 'Pedro', '2025-10-08');
+    expect(nuevo.numeroTurno).toBe(1); 
+    expect(nuevo.tipoCombustible).toBe('Gasolina');
+  });
 
   
   

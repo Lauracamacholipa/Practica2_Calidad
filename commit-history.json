@@ -2157,5 +2157,22 @@
     },
     "coverage": 0,
     "test_count": 25
+  },
+  {
+    "sha": "b174dad35fc8f24e551671e9eef319d1fc556a1e",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:37:41.000Z",
+      "message": "test: crea ticket cuando hay tickets de otra fecha o tipo",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/b174dad35fc8f24e551671e9eef319d1fc556a1e"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 26
   }
 ]

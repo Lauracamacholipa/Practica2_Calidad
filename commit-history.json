@@ -1664,5 +1664,22 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "21ed55f535407fc348830cf99a55e8dfa7f4740e",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T02:12:17.000Z",
+      "message": "Cobertura Inicial: Instalacion del jest y cobertura inicial del proyecto",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/21ed55f535407fc348830cf99a55e8dfa7f4740e"
+    },
+    "stats": {
+      "total": 5333,
+      "additions": 4740,
+      "deletions": 593,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
   }
 ]

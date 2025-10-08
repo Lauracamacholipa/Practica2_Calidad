@@ -1817,5 +1817,22 @@
     },
     "coverage": 0,
     "test_count": 8
+  },
+  {
+    "sha": "9dccccc6020e59db43043b522359df79035c62f7",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:15:32.000Z",
+      "message": "test-Laura: debe agregar combustible a estación en localStorage cuando combustible existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/9dccccc6020e59db43043b522359df79035c62f7"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 9
   }
 ]

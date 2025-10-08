@@ -194,5 +194,27 @@ describe('agregarCombustibleExistente() - Test 2', () => {
     expect(estacionesLista[0].combustibles[1].cantidad).toBe(600);
   });
 
+  // CAMINO 3: Estación en LOCALSTORAGE + Combustible EXISTE → Éxito
+  test('debe agregar combustible a estación en localStorage cuando combustible existe', () => {
+    const estacionLocalStorage = {
+      nombre: "Estación LocalStorage Test",
+      direccion: "Test 123",
+      zona: "Test",
+      combustibles: [
+        { tipo: "Normal", cantidad: 500 },
+        { tipo: "Diesel", cantidad: 300 }
+      ],
+      filaEspera: [],
+      filaTickets: []
+    };
+
+    localStorageMock.getItem.mockReturnValue(JSON.stringify([estacionLocalStorage]));
+
+    const resultado = agregarCombustibleExistente("Estación LocalStorage Test", "Normal", 200);
+    
+    expect(resultado).toBe("Se agregó 200 litros a Normal");
+    expect(localStorageMock.setItem).toHaveBeenCalled();
+  });
+
 
 });

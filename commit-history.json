@@ -1987,5 +1987,22 @@
     },
     "coverage": 0,
     "test_count": 14
+  },
+  {
+    "sha": "a087d92527b2a0300e49f3e5733c79e74758525e",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-08T21:48:15.000Z",
+      "message": "test: implementacion de la ruta4: Solo ordenar",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a087d92527b2a0300e49f3e5733c79e74758525e"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 15
   }
 ]

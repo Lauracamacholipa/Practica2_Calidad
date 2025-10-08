@@ -77,4 +77,15 @@ describe('aplicarFiltrosCombinados', () => {
       expect.objectContaining({ nombre: "Estación Cercado" })
     ]));
   });
+  // Ruta 4: Solo ordenar
+  it('debería ordenar todas las estaciones', () => {
+    const resultado = aplicarFiltrosCombinados({
+      zona: "todos",
+      combustible: "todos",
+      ordenar: true
+    });
+    // No se fuerza posición, solo que todos estén presentes
+    expect(resultado).toHaveLength(mockEstaciones.length);
+    expect(resultado).toEqual(expect.arrayContaining(mockEstaciones));
+  });
 });

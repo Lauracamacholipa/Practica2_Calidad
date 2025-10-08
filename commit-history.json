@@ -1664,5 +1664,209 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "21ed55f535407fc348830cf99a55e8dfa7f4740e",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T02:12:17.000Z",
+      "message": "Cobertura Inicial: Instalacion del jest y cobertura inicial del proyecto",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/21ed55f535407fc348830cf99a55e8dfa7f4740e"
+    },
+    "stats": {
+      "total": 5333,
+      "additions": 4740,
+      "deletions": 593,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
+  },
+  {
+    "sha": "4c9bcbae1ada87200dbf6c89c982a72188d59e93",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:24:05.000Z",
+      "message": "test-Laura: Agregar primer test para agregarAfila - conductor a estación mock",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/4c9bcbae1ada87200dbf6c89c982a72188d59e93"
+    },
+    "stats": {
+      "total": 46,
+      "additions": 46,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 1
+  },
+  {
+    "sha": "d5abafa68ec7aea8c732a027a74275756ad9e1a3",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:25:50.000Z",
+      "message": "test-Laura: Agregar test para crear filaEspera automáticamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/d5abafa68ec7aea8c732a027a74275756ad9e1a3"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 2
+  },
+  {
+    "sha": "6013b9ed6164e5429e60d818624b26877942d9fa",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:28:02.000Z",
+      "message": "test-Laura: Agregar test para estación en localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6013b9ed6164e5429e60d818624b26877942d9fa"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 3
+  },
+  {
+    "sha": "c05ff10769f667f24852cb4bdbe12f31772ac921",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T04:59:08.000Z",
+      "message": "test-Laura: debe retornar false si estación no existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/c05ff10769f667f24852cb4bdbe12f31772ac921"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 4
+  },
+  {
+    "sha": "3adda17ab57b80b583715218d001263477ebf7eb",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T05:02:02.000Z",
+      "message": "test-Laura: debe manejar error en localstorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/3adda17ab57b80b583715218d001263477ebf7eb"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 5
+  },
+  {
+    "sha": "e63c966131dd4b68f113406830b1a2678acc669a",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T08:44:09.000Z",
+      "message": "test-Laura: debe agregar conductor a estacion en localStorage con fila existente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e63c966131dd4b68f113406830b1a2678acc669a"
+    },
+    "stats": {
+      "total": 88,
+      "additions": 54,
+      "deletions": 34,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 6
+  },
+  {
+    "sha": "320fc77212b6bfbc204d7321e2a7a46990a49a70",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:13:06.000Z",
+      "message": "test-Laura: debe agregar combustible a estación mock cuando combustible existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/320fc77212b6bfbc204d7321e2a7a46990a49a70"
+    },
+    "stats": {
+      "total": 95,
+      "additions": 69,
+      "deletions": 26,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 7
+  },
+  {
+    "sha": "a75828caee3f569b7fbf8165330592bf1dd300e0",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:14:30.000Z",
+      "message": "test-Laura: debe retornar error cuando tipo de combustible no existe en estación mock",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/a75828caee3f569b7fbf8165330592bf1dd300e0"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 8
+  },
+  {
+    "sha": "9dccccc6020e59db43043b522359df79035c62f7",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:15:32.000Z",
+      "message": "test-Laura: debe agregar combustible a estación en localStorage cuando combustible existe",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/9dccccc6020e59db43043b522359df79035c62f7"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 9
+  },
+  {
+    "sha": "7d5af4e3a76d0fe15295f8f416992f1d7cef8708",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:16:31.000Z",
+      "message": "test-Laura: debe retornar error cuando tipo de combustible no existe en estación localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/7d5af4e3a76d0fe15295f8f416992f1d7cef8708"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 10
+  },
+  {
+    "sha": "97a365a4bb124d24ccabcc8a39e148fb4b84edc0",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-08T09:17:27.000Z",
+      "message": "test-Laura: debe retornar error cuando estación no existe en mock ni localStorage",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/97a365a4bb124d24ccabcc8a39e148fb4b84edc0"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 11
   }
 ]

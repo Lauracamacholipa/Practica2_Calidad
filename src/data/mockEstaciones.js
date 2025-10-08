@@ -153,61 +153,54 @@ export function agregarEstacion(estacion) {
   }
   estacionesLista.push(estacion);
 }
-export function agregarAfila(nombreEstacion, datosConductor) {
-  const nombreLower = nombreEstacion.toLowerCase();
+export function agregarAfila(nombreEstacion, datosConductor) { //[1]
+  const nombreLower = nombreEstacion.toLowerCase(); //[2]
 
-  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower);
+  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower); //[3]
 
-  if (estacion) {
-    // 👇 Garantizar que filaEspera exista
-    if (!estacion.filaEspera) {
-      estacion.filaEspera = [];
+  if (estacion) { //[4] NODO DECISIÓN
+    if (!estacion.filaEspera) { //[5] NODO DECISIÓN
+      estacion.filaEspera = []; //[6]
     }
 
-    const nuevaPosicion = estacion.filaEspera.length + 1;
-
-    estacion.filaEspera.push({
+    const nuevaPosicion = estacion.filaEspera.length + 1; //[7]
+    estacion.filaEspera.push({ //[8]
       nombre: datosConductor.nombre,
       placa: datosConductor.placa,
       tipo: datosConductor.tipo
     });
-
-    console.log(`Conductor ${datosConductor.nombre} agregado a estación mock "${nombreEstacion}". Posición: ${nuevaPosicion}`);
-    return nuevaPosicion;
+    console.log(`Conductor ${datosConductor.nombre} agregado a estación mock "${nombreEstacion}". Posición: ${nuevaPosicion}`); //[9] 
+    return nuevaPosicion; //[10]
   }
 
-  try {
-    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
-    const index = adicionales.findIndex(e => e.nombre.toLowerCase() === nombreLower);
+  try { //[11] NODO DECISIÓN
+    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]"); //[12]
+    const index = adicionales.findIndex(e => e.nombre.toLowerCase() === nombreLower); //[13]
 
-    if (index !== -1) {
-      estacion = adicionales[index];
+    if (index !== -1) { //[14] NODO DECISIÓN
+      estacion = adicionales[index]; //[15]
 
-      // 👇 Garantizar que filaEspera exista en localStorage también
-      if (!estacion.filaEspera) {
-        estacion.filaEspera = [];
+      if (!estacion.filaEspera) { //[16] NODO DECISIÓN
+        estacion.filaEspera = []; //[17]
       }
 
-      const nuevaPosicion = estacion.filaEspera.length + 1;
-
-      estacion.filaEspera.push({
+      const nuevaPosicion = estacion.filaEspera.length + 1; //[18]
+      estacion.filaEspera.push({ //[19]
         nombre: datosConductor.nombre,
         placa: datosConductor.placa,
         tipo: datosConductor.tipo
       });
-
-      adicionales[index] = estacion;
-      localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales));
-
-      console.log(`Conductor ${datosConductor.nombre} agregado a estación localStorage "${nombreEstacion}". Posición: ${nuevaPosicion}`);
-      return nuevaPosicion;
+      adicionales[index] = estacion; //[20]
+      localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales)); //[21]
+      console.log(`Conductor ${datosConductor.nombre} agregado a estación localStorage "${nombreEstacion}". Posición: ${nuevaPosicion}`); //[22]
+      return nuevaPosicion; //[23]
     }
-  } catch (error) {
-    console.error("Error al acceder a estaciones del localStorage:", error);
+  } catch (error) { //[24]
+    console.error("Error al acceder a estaciones del localStorage:", error); //[25]
   }
 
-  console.error(`Error: No se encontró la estación "${nombreEstacion}"`);
-  return false;
+  console.error(`Error: No se encontró la estación "${nombreEstacion}"`); //[26]
+  return false; //[27]
 }
 export function obtenerCantidadCombustible(nombreEstacion) {
   const estacion = estacionesLista.find(est => est.nombre === nombreEstacion);
@@ -217,28 +210,28 @@ export function obtenerCantidadCombustible(nombreEstacion) {
 }
 
 export function agregarCombustibleExistente(nombreEstacion, tipo, cantidad) {
-  const nombreLower = nombreEstacion.toLowerCase();
-  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower);
-  let enMock = true;
+  const nombreLower = nombreEstacion.toLowerCase(); // [1]
+  let estacion = estacionesLista.find(est => est.nombre.toLowerCase() === nombreLower); // [2]
+  let enMock = true; // [3]
 
-  if (!estacion) {
-    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
-    estacion = adicionales.find(e => e.nombre.toLowerCase() === nombreLower);
-    enMock = false;
+  if (!estacion) { // [4] DECISIÓN 1
+    const adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]"); // [5]
+    estacion = adicionales.find(e => e.nombre.toLowerCase() === nombreLower); // [6]
+    enMock = false; // [7]
 
-    if (!estacion) return "Estación no encontrada";
+    if (!estacion) return "Estación no encontrada"; // [8] DECISIÓN 2 -> FIN
 
-    const combustible = estacion.combustibles.find(c => c.tipo === tipo);
-    if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`;
+    const combustible = estacion.combustibles.find(c => c.tipo === tipo); // [9]
+    if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`; // [10] DECISIÓN 3 -> FIN
 
-    combustible.cantidad += cantidad;
-    localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales));
-    return `Se agregó ${cantidad} litros a ${tipo}`;
+    combustible.cantidad += cantidad; // [11]
+    localStorage.setItem("nuevasEstaciones", JSON.stringify(adicionales)); // [12]
+    return `Se agregó ${cantidad} litros a ${tipo}`; // [13]
   }
 
-  const combustible = estacion.combustibles.find(c => c.tipo === tipo);
-  if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`;
+  const combustible = estacion.combustibles.find(c => c.tipo === tipo); // [14]
+  if (!combustible) return `Tipo de combustible "${tipo}" no registrado en esta estación`; // [15] DECISIÓN 4 -> [16]
 
-  combustible.cantidad += cantidad;
-  return `Se agregó ${cantidad} litros a ${tipo}`;
+  combustible.cantidad += cantidad; // [17]
+  return `Se agregó ${cantidad} litros a ${tipo}`; // [18]
 }

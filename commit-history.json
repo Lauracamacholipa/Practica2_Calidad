@@ -1885,5 +1885,22 @@
     },
     "coverage": 0,
     "test_count": 0
+  },
+  {
+    "sha": "e48113749dd848d1a190b45a5f206de2e10f170e",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:10:21.000Z",
+      "message": "test: agregar mock de obtenerEstaciones y datos de ejemplo",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e48113749dd848d1a190b45a5f206de2e10f170e"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 38,
+      "deletions": 3,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
   }
 ]

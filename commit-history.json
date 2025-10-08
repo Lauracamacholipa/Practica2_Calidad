@@ -2072,5 +2072,22 @@
     },
     "coverage": 0,
     "test_count": 19
+  },
+  {
+    "sha": "8a000c79bda660e78f7eb01af77534a464658b5e",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:18:42.000Z",
+      "message": "test: crea ticket con turno siguiente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/8a000c79bda660e78f7eb01af77534a464658b5e"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 20
   }
 ]

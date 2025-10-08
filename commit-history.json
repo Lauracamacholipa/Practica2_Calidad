@@ -2089,5 +2089,22 @@
     },
     "coverage": 0,
     "test_count": 20
+  },
+  {
+    "sha": "ee1f522df86a926b280389007eb2de49b16ca3c4",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:22:31.000Z",
+      "message": "test:Lanza error si faltan datos, estacion nombre",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/ee1f522df86a926b280389007eb2de49b16ca3c4"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 21
   }
 ]

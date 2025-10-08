@@ -29,4 +29,9 @@ describe('generarTicket', () => {
     expect(nuevo.tipoCombustible).toBe('Gasolina');
     expect(localStorage.setItem).toHaveBeenCalled();
   });
+  it('Lanza error si faltan datos', () => {
+    expect(() => generarTicket('', 'Gasolina', 'ABC123', 'Juan', '2025-10-08'))
+      .toThrow('Todos los campos son obligatorios.');
+  });
+  
 });

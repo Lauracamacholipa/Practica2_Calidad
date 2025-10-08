@@ -1868,5 +1868,22 @@
     },
     "coverage": 0,
     "test_count": 11
+  },
+  {
+    "sha": "3adde0269d718bdc99df00100e7c2a8a880a3615",
+    "author": "Mar14n423",
+    "commit": {
+      "date": "2025-10-08T16:09:02.000Z",
+      "message": "test: crear estructura base para aplicarFiltrosCombinados",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/3adde0269d718bdc99df00100e7c2a8a880a3615"
+    },
+    "stats": {
+      "total": 2926,
+      "additions": 1153,
+      "deletions": 1773,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 0
   }
 ]

@@ -48,5 +48,31 @@ describe('generarTicket', () => {
     expect(() => generarTicket('Estacion Norte', 'Gasolina', 'ABC123', 'Juan', '2025-10-08'))
       .toThrow('Ya tiene un ticket activo.');
   });
+  it('Crea ticket correctamente si no hay tickets previos del mismo tipo', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [],
+        filaEspera: []
+      }
+    ]);
+    const nuevo = generarTicket('Estacion Norte', 'Diesel', 'XYZ999', 'Carlos', '2025-10-09');
+    expect(nuevo.numeroTurno).toBe(1);
+  });
+
+   it('Lanza error si el conductor tiene ticket activo en la fila de espera', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [],
+        filaEspera: [{ nombre: 'Juan' }]
+      }
+    ]);
+    expect(() =>
+      generarTicket('Estacion Norte', 'Gasolina', 'XYZ123', 'Juan', '2025-10-08')
+    ).toThrow('Ya tiene un ticket activo.');
+  });
+
+  
   
 });

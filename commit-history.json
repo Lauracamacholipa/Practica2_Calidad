@@ -2140,5 +2140,22 @@
     },
     "coverage": 0,
     "test_count": 23
+  },
+  {
+    "sha": "7b0e797adcbb8043e45d13affdedd7b975d2aca4",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:35:42.000Z",
+      "message": "test: lanza error si el conductor tiene ticket activo en la fila de espera",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/7b0e797adcbb8043e45d13affdedd7b975d2aca4"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 26,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 25
   }
 ]

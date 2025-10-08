@@ -2123,5 +2123,22 @@
     },
     "coverage": 0,
     "test_count": 22
+  },
+  {
+    "sha": "978517bf3ae1fc24e06722baf7466dc9c7c45308",
+    "author": "andresrev070303",
+    "commit": {
+      "date": "2025-10-08T23:26:57.000Z",
+      "message": "test: lanza error si el condutctor ya tiene un ticket activo",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/978517bf3ae1fc24e06722baf7466dc9c7c45308"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-08"
+    },
+    "coverage": 0,
+    "test_count": 23
   }
 ]

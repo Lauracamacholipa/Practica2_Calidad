@@ -37,5 +37,16 @@ describe('generarTicket', () => {
     expect(() => generarTicket('Estacion Fantasma', 'Gasolina', 'AAA111', 'Juan', '2025-10-08'))
       .toThrow('Estación no encontrada.');
   });
+  it('Lanza error si el conductor ya tiene ticket activo', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [{ numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' }],
+        filaEspera: []
+      }
+    ]);
+    expect(() => generarTicket('Estacion Norte', 'Gasolina', 'ABC123', 'Juan', '2025-10-08'))
+      .toThrow('Ya tiene un ticket activo.');
+  });
   
 });

@@ -82,5 +82,18 @@ describe('registrarEstacion - Cobertura completa (8 rutas)', () => {
     const resultado = registrarEstacion(estacionDuplicada);
     expect(resultado).toBe("Estacion de servicio ya existente");
   });
-   
+   // R8: Error en localStorage + estación duplicada
+  it('R8: debería retornar mensaje de duplicado incluso si localStorage falla', () => {
+    global.localStorage.getItem = jest.fn(() => { throw new Error("Error de lectura"); });
+
+    const estacionDuplicada = {
+      nombre: estacionesLista[0].nombre,
+      zona: estacionesLista[0].zona,
+      direccion: estacionesLista[0].direccion,
+      combustibles: estacionesLista[0].combustibles.map(c => c.tipo)
+    };
+
+    const resultado = registrarEstacion(estacionDuplicada);
+    expect(resultado).toBe("Estacion de servicio ya existente");
+  });
 });

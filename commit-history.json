@@ -2293,5 +2293,22 @@
     },
     "coverage": 0,
     "test_count": 34
+  },
+  {
+    "sha": "ab8109d8f41fc7e44e029ae76a2fa0d69726fece",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:41:51.000Z",
+      "message": "test 8: octavo caso de prueba para el Error en localStorage + estación duplicada",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/ab8109d8f41fc7e44e029ae76a2fa0d69726fece"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 35
   }
 ]

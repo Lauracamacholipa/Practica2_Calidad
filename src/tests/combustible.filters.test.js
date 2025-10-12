@@ -191,4 +191,12 @@ describe('filtrarPorCombustible', () => {
     }).toThrow('Tipo de combustible "Premium" no reconocido');
   });
 
+  // TC3: Camino P3 - Tipo válido con filtrado normal
+  it('debería filtrar estaciones con combustible Normal y cantidad > 0', () => {
+    const resultado = filtrarPorCombustible("Normal", mockEstacionesFiltro);
+    
+    expect(resultado).toHaveLength(2);
+    expect(resultado.map(e => e.nombre)).toEqual(["Estación A", "Estación D"]);
+  });
+
 });

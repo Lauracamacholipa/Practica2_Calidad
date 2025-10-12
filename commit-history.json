@@ -2225,5 +2225,22 @@
     },
     "coverage": 0,
     "test_count": 29
+  },
+  {
+    "sha": "f2b880f512136940dfc7572b9db28332d22d957a",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:57:58.000Z",
+      "message": "test: debería filtrar estaciones con combustible Normal y cantidad > 0",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/f2b880f512136940dfc7572b9db28332d22d957a"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 30
   }
 ]

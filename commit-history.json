@@ -2191,5 +2191,56 @@
     },
     "coverage": 0,
     "test_count": 27
+  },
+  {
+    "sha": "2e61593756a0f879ad3b25ec97b1427e77684ac9",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:56:44.000Z",
+      "message": "test: deberia retornar todas las estaciones cuando tipo es todos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2e61593756a0f879ad3b25ec97b1427e77684ac9"
+    },
+    "stats": {
+      "total": 150,
+      "additions": 99,
+      "deletions": 51,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 28
+  },
+  {
+    "sha": "6ea88eb05a54c8be9150243f96b24d0dabaf0b1f",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:57:19.000Z",
+      "message": "test: debería lanzar error cuando el tipo de combustible no es válido",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6ea88eb05a54c8be9150243f96b24d0dabaf0b1f"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 29
+  },
+  {
+    "sha": "f2b880f512136940dfc7572b9db28332d22d957a",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:57:58.000Z",
+      "message": "test: debería filtrar estaciones con combustible Normal y cantidad > 0",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/f2b880f512136940dfc7572b9db28332d22d957a"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 30
   }
 ]

@@ -11,19 +11,19 @@ export function ordenarPorCantidad(estaciones = []) {
   });
 }
 
-export function filtrarPorCombustible(tipo, estaciones = []) {
-  if (tipo === "todos") return [...estaciones];
+export function filtrarPorCombustible(tipo, estaciones = []) { //INICIO
+  if (tipo === "todos") return [...estaciones]; //[2] -> Decision
 
-  const tiposValidos = ["Normal", "Especial", "Diesel", "Gas"];
-  if (!tiposValidos.includes(tipo)) {
-    throw new Error(`Tipo de combustible "${tipo}" no reconocido`);
+  const tiposValidos = ["Normal", "Especial", "Diesel", "Gas"]; //[3]
+  if (!tiposValidos.includes(tipo)) { //[4] -> Decision
+    throw new Error(`Tipo de combustible "${tipo}" no reconocido`); //[5]
   }
 
-  return estaciones.filter(e => {
+  return estaciones.filter(e => { //[6]
     const combustible = e.combustibles.find(c => c.tipo === tipo);
     return combustible && combustible.cantidad > 0;
   });
-}
+} // FIN
 
 export function filtrarPorZona(zona, estaciones = estacionesLista) {
   // 👇 Primero verificamos si queremos todas las zonas

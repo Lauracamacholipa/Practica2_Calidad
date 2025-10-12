@@ -2208,5 +2208,22 @@
     },
     "coverage": 0,
     "test_count": 28
+  },
+  {
+    "sha": "6ea88eb05a54c8be9150243f96b24d0dabaf0b1f",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:57:19.000Z",
+      "message": "test: debería lanzar error cuando el tipo de combustible no es válido",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6ea88eb05a54c8be9150243f96b24d0dabaf0b1f"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 29
   }
 ]

@@ -180,4 +180,15 @@ describe('filtrarPorCombustible', () => {
     expect(resultado).toEqual(mockEstacionesFiltro);
   });
 
+  // TC2: Camino P2 - Tipo inválido (debe lanzar error)
+  it('debería lanzar error cuando el tipo de combustible no es válido', () => {
+    expect(() => {
+      filtrarPorCombustible("Invalido", mockEstacionesFiltro);
+    }).toThrow('Tipo de combustible "Invalido" no reconocido');
+    
+    expect(() => {
+      filtrarPorCombustible("Premium", mockEstacionesFiltro);
+    }).toThrow('Tipo de combustible "Premium" no reconocido');
+  });
+
 });

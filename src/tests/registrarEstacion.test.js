@@ -1,4 +1,6 @@
 import registrarEstacion from '../modules/estacion/registrarEstacion.js';
+import { estacionesLista } from '../data/mockEstaciones.js';
+
 // Mock del localStorage
 beforeEach(() => {
   global.localStorage = {
@@ -55,4 +57,30 @@ describe('registrarEstacion - Cobertura completa (8 rutas)', () => {
       combustibles: [{ tipo: "Diesel", cantidad: 0 }]
     });
   });
+  // R6: Error al leer localStorage pero sin duplicado
+  it('R6: debería devolver resultado válido aunque localStorage falle', () => {
+    global.localStorage.getItem = jest.fn(() => { throw new Error("Error de lectura"); });
+
+    const resultado = registrarEstacion({
+      nombre: "Estación Falla",
+      zona: "Este",
+      direccion: "Av. Heroínas",
+      combustibles: ["Normal"]
+    });
+
+    expect(resultado.nombre).toBe("Estación Falla");
+  });
+  // R7: Estación duplicada existente (ya en lista)
+  it('R7: debería detectar estación duplicada existente', () => {
+    const estacionDuplicada = {
+      nombre: estacionesLista[0].nombre,
+      zona: estacionesLista[0].zona,
+      direccion: estacionesLista[0].direccion,
+      combustibles: estacionesLista[0].combustibles.map(c => c.tipo)
+    };
+
+    const resultado = registrarEstacion(estacionDuplicada);
+    expect(resultado).toBe("Estacion de servicio ya existente");
+  });
+   
 });

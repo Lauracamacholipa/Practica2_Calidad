@@ -2276,5 +2276,22 @@
     },
     "coverage": 0,
     "test_count": 32
+  },
+  {
+    "sha": "22c6f3db58bd9262169ea8f58732428c58408919",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:28:50.000Z",
+      "message": "test 6 y 7: sexto y septimo caso de prueba mas configuracion en registrarEstacion.js para los casos de prueba 7 y 8",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/22c6f3db58bd9262169ea8f58732428c58408919"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 45,
+      "deletions": 20,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 34
   }
 ]

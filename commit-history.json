@@ -2242,5 +2242,22 @@
     },
     "coverage": 0,
     "test_count": 30
+  },
+  {
+    "sha": "abf4f8a8a4fb1d46820e8a48552ea8bef5b78f52",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:07:34.000Z",
+      "message": "test 4:  cuarto caso de prueba para tener Nombre, zona y dirección válidos, sin combustibles válidos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/abf4f8a8a4fb1d46820e8a48552ea8bef5b78f52"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 31
   }
 ]

@@ -26,4 +26,18 @@ describe('registrarEstacion - Cobertura completa (8 rutas)', () => {
     });
     expect(resultado).toEqual({ nombre: "Estación B", zona: "Sur" });
   });
+   // R4: Nombre, zona y dirección válidos, sin combustibles válidos
+  it('R4: debería devolver objeto con nombre, zona y dirección si combustibles es inválido', () => {
+    const resultado = registrarEstacion({
+      nombre: "Estación C",
+      zona: "Cercado",
+      direccion: "Av. Blanco Galindo",
+      combustibles: "no-array"
+    });
+    expect(resultado).toEqual({
+      nombre: "Estación C",
+      zona: "Cercado",
+      direccion: "Av. Blanco Galindo"
+    });
+  });
 });

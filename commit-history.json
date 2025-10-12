@@ -2191,5 +2191,22 @@
     },
     "coverage": 0,
     "test_count": 27
+  },
+  {
+    "sha": "2e61593756a0f879ad3b25ec97b1427e77684ac9",
+    "author": "Laura Camacho",
+    "commit": {
+      "date": "2025-10-12T12:56:44.000Z",
+      "message": "test: deberia retornar todas las estaciones cuando tipo es todos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2e61593756a0f879ad3b25ec97b1427e77684ac9"
+    },
+    "stats": {
+      "total": 150,
+      "additions": 99,
+      "deletions": 51,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 28
   }
 ]

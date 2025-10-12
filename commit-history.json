@@ -2192,22 +2192,50 @@
     "coverage": 0,
     "test_count": 27
   },
+  [
+  {
+    "sha": "351120c00497e175814087f54da79785c1c63ec1",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T00:54:00.000Z",
+      "message": "test 1: creación del archivo registrarEstacion.test.js y el primer caso de prueba de nombre inválido o vacío",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/351120c00497e175814087f54da79785c1c63ec1"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0
+    }
+  },
   {
     "sha": "2e61593756a0f879ad3b25ec97b1427e77684ac9",
     "author": "Laura Camacho",
     "commit": {
       "date": "2025-10-12T12:56:44.000Z",
-      "message": "test: deberia retornar todas las estaciones cuando tipo es todos",
+      "message": "test: debería retornar todas las estaciones cuando tipo es todos",
       "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/2e61593756a0f879ad3b25ec97b1427e77684ac9"
     },
     "stats": {
       "total": 150,
       "additions": 99,
-      "deletions": 51,
-      "date": "2025-10-12"
+      "deletions": 51
     },
     "coverage": 0,
     "test_count": 28
+  },
+  {
+    "sha": "e3d30f30dd7a4121195ea51653aa709a757b5775",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T00:56:31.000Z",
+      "message": "test 2: segundo caso de prueba para el nombre válido solamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e3d30f30dd7a4121195ea51653aa709a757b5775"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0
+    }
   },
   {
     "sha": "6ea88eb05a54c8be9150243f96b24d0dabaf0b1f",
@@ -2220,11 +2248,24 @@
     "stats": {
       "total": 11,
       "additions": 11,
-      "deletions": 0,
-      "date": "2025-10-12"
+      "deletions": 0
     },
     "coverage": 0,
     "test_count": 29
+  },
+  {
+    "sha": "6e45bbaa1b2c057ab25f9adc727e51366410922b",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:00:34.000Z",
+      "message": "test 3: tercer caso de prueba para tener tanto el nombre como la zona válidos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6e45bbaa1b2c057ab25f9adc727e51366410922b"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0
+    }
   },
   {
     "sha": "f2b880f512136940dfc7572b9db28332d22d957a",
@@ -2237,10 +2278,75 @@
     "stats": {
       "total": 8,
       "additions": 8,
-      "deletions": 0,
-      "date": "2025-10-12"
+      "deletions": 0
     },
     "coverage": 0,
     "test_count": 30
+  },
+  {
+    "sha": "abf4f8a8a4fb1d46820e8a48552ea8bef5b78f52",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:07:34.000Z",
+      "message": "test 4: cuarto caso de prueba para tener Nombre, zona y dirección válidos, sin combustibles válidos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/abf4f8a8a4fb1d46820e8a48552ea8bef5b78f52"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0
+    },
+    "coverage": 0,
+    "test_count": 31
+  },
+  {
+    "sha": "b765cce0e8f911bbf7e04119dd8bdfd9aa35ff5b",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:16:14.000Z",
+      "message": "test 5: quinto caso de prueba para tener Todos los campos válidos y estación nueva",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/b765cce0e8f911bbf7e04119dd8bdfd9aa35ff5b"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0
+    },
+    "coverage": 0,
+    "test_count": 32
+  },
+  {
+    "sha": "22c6f3db58bd9262169ea8f58732428c58408919",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:28:50.000Z",
+      "message": "test 6 y 7: sexto y séptimo caso de prueba más configuración en registrarEstacion.js para los casos de prueba 7 y 8",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/22c6f3db58bd9262169ea8f58732428c58408919"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 45,
+      "deletions": 20
+    },
+    "coverage": 0,
+    "test_count": 34
+  },
+  {
+    "sha": "ab8109d8f41fc7e44e029ae76a2fa0d69726fece",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:41:51.000Z",
+      "message": "test 8: octavo caso de prueba para el Error en localStorage + estación duplicada",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/ab8109d8f41fc7e44e029ae76a2fa0d69726fece"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1
+    },
+    "coverage": 0,
+    "test_count": 35
   }
+]
+
 ]

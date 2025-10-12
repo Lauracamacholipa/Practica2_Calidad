@@ -25,30 +25,27 @@ function registrarEstacion(data) {
     }));
   }
 
-  // Solo si todos los campos están presentes
-  if (resultado.nombre && resultado.zona && resultado.direccion && resultado.combustibles) {
     let adicionales = [];
-    try {
-      adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
-    } catch (e) {
-      console.error("Error leyendo nuevasEstaciones:", e);
-    }
+  try {
+    adicionales = JSON.parse(localStorage.getItem("nuevasEstaciones") || "[]");
+  } catch (e) {
+    console.error("Error leyendo nuevasEstaciones:", e);
+  }
 
-    const existentes = [...estacionesLista, ...adicionales];
+  const existentes = [...estacionesLista, ...adicionales];
 
-    const yaExiste = existentes.some(e =>
-      e.nombre === resultado.nombre &&
-      e.zona === resultado.zona &&
-      e.direccion === resultado.direccion &&
-      JSON.stringify(e.combustibles) === JSON.stringify(resultado.combustibles)
-    );
+  const yaExiste = existentes.some(e =>
+    e.nombre === resultado.nombre &&
+    e.zona === resultado.zona &&
+    e.direccion === resultado.direccion
+  );
 
-    if (yaExiste) {
-      return "Estacion de servicio ya existente";
-    }
+  if (yaExiste) {
+    return "Estacion de servicio ya existente";
   }
 
   return resultado;
+
 }
 
 export default registrarEstacion;

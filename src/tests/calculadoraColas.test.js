@@ -7,5 +7,10 @@ describe("gasolinaAlcanzara - Cobertura completa (3 rutas)", () => {
     expect(gasolinaAlcanzara(30, 400))
       .toBe("Sí alcanzará: Hay suficiente combustible para su turno");
   });
+ // R2: capacidad === vehiculos
+  it('R2: debería mostrar advertencia cuando la capacidad es igual al número de vehículos', () => {
+    expect(gasolinaAlcanzara(60, 500))
+      .toBe("Advertencia: El combustible justo alcanza, mejor ir a otro surtidor para no arriesgarse");
+  });
 
 });

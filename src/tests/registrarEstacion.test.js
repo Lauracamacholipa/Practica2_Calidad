@@ -40,4 +40,19 @@ describe('registrarEstacion - Cobertura completa (8 rutas)', () => {
       direccion: "Av. Blanco Galindo"
     });
   });
+  // R5: Todos los campos válidos y estación nueva
+  it('R5: debería registrar correctamente una estación nueva', () => {
+    const resultado = registrarEstacion({
+      nombre: "Estación Nueva",
+      zona: "Norte",
+      direccion: "Calle 10",
+      combustibles: ["Diesel"]
+    });
+    expect(resultado).toEqual({
+      nombre: "Estación Nueva",
+      zona: "Norte",
+      direccion: "Calle 10",
+      combustibles: [{ tipo: "Diesel", cantidad: 0 }]
+    });
+  });
 });

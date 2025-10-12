@@ -2259,5 +2259,22 @@
     },
     "coverage": 0,
     "test_count": 31
+  },
+  {
+    "sha": "b765cce0e8f911bbf7e04119dd8bdfd9aa35ff5b",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:16:14.000Z",
+      "message": "test 5:  quinto caso de prueba para tener Todos los campos válidos y estación nueva",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/b765cce0e8f911bbf7e04119dd8bdfd9aa35ff5b"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 32
   }
 ]

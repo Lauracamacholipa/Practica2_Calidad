@@ -2191,5 +2191,22 @@
     },
     "coverage": 0,
     "test_count": 27
+  },
+  {
+    "sha": "351120c00497e175814087f54da79785c1c63ec1",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T00:54:00.000Z",
+      "message": "test 1: creacion del archivo registrarEstacion.test.js y el primer caso de prueba de nombre invalido o vacio",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/351120c00497e175814087f54da79785c1c63ec1"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 28
   }
 ]

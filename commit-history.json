@@ -2208,5 +2208,22 @@
     },
     "coverage": 0,
     "test_count": 28
+  },
+  {
+    "sha": "e3d30f30dd7a4121195ea51653aa709a757b5775",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T00:56:31.000Z",
+      "message": "test 2:  segundo caso de prueba para el nombre valido solamente",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/e3d30f30dd7a4121195ea51653aa709a757b5775"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 29
   }
 ]

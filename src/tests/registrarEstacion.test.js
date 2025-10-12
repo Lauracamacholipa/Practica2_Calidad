@@ -18,4 +18,12 @@ describe('registrarEstacion - Cobertura completa (8 rutas)', () => {
     const resultado = registrarEstacion({ nombre: "Estación A" });
     expect(resultado).toEqual({ nombre: "Estación A" });
   });
+  // R3: Nombre y zona válidos
+  it('R3: debería devolver objeto con nombre y zona válidos', () => {
+    const resultado = registrarEstacion({
+      nombre: "Estación B",
+      zona: "Sur"
+    });
+    expect(resultado).toEqual({ nombre: "Estación B", zona: "Sur" });
+  });
 });

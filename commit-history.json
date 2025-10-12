@@ -2225,5 +2225,22 @@
     },
     "coverage": 0,
     "test_count": 29
+  },
+  {
+    "sha": "6e45bbaa1b2c057ab25f9adc727e51366410922b",
+    "author": "jorgevargaspo",
+    "commit": {
+      "date": "2025-10-12T01:00:34.000Z",
+      "message": "test 3:  tercer caso de prueba para tener tanto el nombre como la zona validos",
+      "url": "https://github.com/Lauracamacholipa/Practica2_Calidad/commit/6e45bbaa1b2c057ab25f9adc727e51366410922b"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2025-10-12"
+    },
+    "coverage": 0,
+    "test_count": 30
   }
 ]

@@ -1,4 +1,4 @@
-import { gasolinaAlcanzara } from "../utils/calculadoraColas.js";
+import { gasolinaAlcanzara, calcularVehiculosEnCola } from "../utils/calculadoraColas.js";
 
 describe("gasolinaAlcanzara - Cobertura completa (3 rutas)", () => {
 
@@ -16,5 +16,11 @@ describe("gasolinaAlcanzara - Cobertura completa (3 rutas)", () => {
   it('R3: debería indicar que no alcanzará cuando la capacidad es menor que los vehículos en cola', () => {
     expect(gasolinaAlcanzara(120, 300))
       .toBe("No alcanzará: El combustible no cubrirá su posición en la cola");
+  });
+});
+describe("Funciones auxiliares de calculadoraColas", () => {
+  it("debería calcular correctamente el número de vehículos en cola", () => {
+    expect(calcularVehiculosEnCola(60)).toBe(10);
+    expect(calcularVehiculosEnCola(12)).toBe(2);
   });
 });

@@ -1,4 +1,4 @@
-import { aplicarFiltrosCombinados, filtrarPorCombustible } from '../utils/combustible.filters.js';
+import { aplicarFiltrosCombinados, filtrarPorCombustible, filtrarPorZona } from '../utils/combustible.filters.js';
 
 // Mock solo para obtenerEstaciones
 jest.mock('../data/mockEstaciones.js', () => {
@@ -199,4 +199,61 @@ describe('filtrarPorCombustible', () => {
     expect(resultado.map(e => e.nombre)).toEqual(["Estación A", "Estación D"]);
   });
 
+});
+
+describe('filtrarPorZona', () => {
+  // Mock de estaciones para las pruebas de filtrado por zona
+  const mockEstacionesZona = [
+    {
+      nombre: "Estación Norte A",
+      zona: "Norte",
+      combustibles: [
+        { tipo: "Normal", cantidad: 500 }
+      ]
+    },
+    {
+      nombre: "Estación Norte B", 
+      zona: "Norte",
+      combustibles: [
+        { tipo: "Especial", cantidad: 300 }
+      ]
+    },
+    {
+      nombre: "Estación Sur",
+      zona: "Sur",
+      combustibles: [
+        { tipo: "Diesel", cantidad: 200 }
+      ]
+    },
+    {
+      nombre: "Estación Cercado",
+      zona: "Cercado", 
+      combustibles: [
+        { tipo: "Normal", cantidad: 800 }
+      ]
+    }
+  ];
+
+  // TC1: Camino P1 - Zona "todos"
+  it('debería retornar todas las estaciones cuando zona es "todos"', () => {
+    const resultado = filtrarPorZona("todos", mockEstacionesZona);
+    
+    expect(resultado).toHaveLength(4);
+    expect(resultado).toEqual(mockEstacionesZona);
+  });
+
+  // TC2: Camino P2 - Zona inválida (debe lanzar error)
+  it('debería lanzar error cuando la zona no es válida', () => {
+    expect(() => {
+      filtrarPorZona("ZonaInventada", mockEstacionesZona);
+    }).toThrow('Zona "ZonaInventada" no reconocida');
+  });
+
+  // TC3: Camino P3 - Zona válida con filtrado normal
+  it('debería filtrar estaciones por zona Norte correctamente', () => {
+    const resultado = filtrarPorZona("Norte", mockEstacionesZona);
+    
+    expect(resultado).toHaveLength(2);
+    expect(resultado.map(e => e.nombre)).toEqual(["Estación Norte A", "Estación Norte B"]);
+  });
 });

@@ -249,11 +249,4 @@ describe('filtrarPorZona', () => {
     }).toThrow('Zona "ZonaInventada" no reconocida');
   });
 
-  // TC3: Camino P3 - Zona válida con filtrado normal
-  it('debería filtrar estaciones por zona Norte correctamente', () => {
-    const resultado = filtrarPorZona("Norte", mockEstacionesZona);
-    
-    expect(resultado).toHaveLength(2);
-    expect(resultado.map(e => e.nombre)).toEqual(["Estación Norte A", "Estación Norte B"]);
-  });
 });

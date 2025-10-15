@@ -190,7 +190,24 @@ describe('eliminarTicket', () => {
     expect(resultado).toBe(false);
   });
 
-
+  it('retorna true y elimina el ticket cuando se encuentra correctamente', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultado).toBe(true);
+    
+    const resultadoSegundaEliminacion = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultadoSegundaEliminacion).toBe(false); // Ya no debería encontrarlo
+  });
 });
 
 /*----------------------------------------------------------*/

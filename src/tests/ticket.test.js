@@ -113,6 +113,27 @@ describe('obtenerTodosLosTicketsAgrupados', () => {
   });
 
 });
+// CAMINO 2: Estaciones con tickets donde fechaCarga es diferente (toma rama del if)
+  it('ordena tickets por fecha cuando fechaCarga es diferente', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Test',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-10', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = obtenerTodosLosTicketsAgrupados();
+    
+    expect(resultado['Estacion Test']).toHaveLength(2);
+    expect(resultado['Estacion Test'][0].fechaCarga).toBe('2025-10-08');
+    expect(resultado['Estacion Test'][1].fechaCarga).toBe('2025-10-10');
+  });
+
+
 
   
   

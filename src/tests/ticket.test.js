@@ -1,4 +1,4 @@
-import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados } from '../utils/ticket.js';
+import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados, eliminarTicket } from '../utils/ticket.js';
 
 beforeAll(() => {
   global.localStorage = {
@@ -152,6 +152,12 @@ describe('obtenerTodosLosTicketsAgrupados', () => {
     expect(resultado['Estacion Test'][1].numeroTurno).toBe(2);
     expect(resultado['Estacion Test'][2].numeroTurno).toBe(3);
   });
+
+/*----------------------------------------------------------*/
+it('retorna false cuando la estación no existe', () => {
+  const resultado = eliminarTicket('Estacion Inexistente', 'Juan');
+  expect(resultado).toBe(false);
+});
 
 
 

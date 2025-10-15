@@ -1,4 +1,4 @@
-import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados } from '../utils/ticket.js';
+import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados, eliminarTicket } from '../utils/ticket.js';
 
 beforeAll(() => {
   global.localStorage = {
@@ -153,9 +153,67 @@ describe('obtenerTodosLosTicketsAgrupados', () => {
     expect(resultado['Estacion Test'][2].numeroTurno).toBe(3);
   });
 
+/*----------------------------------------------------------*/
 
-
-
+// Pruebas para eliminarTicket - Complejidad Ciclomática = 3
+describe('eliminarTicket', () => {
   
+  // CAMINO 1: Estación no encontrada (primera condición if (!estacion))
+  it('retorna false cuando la estación no existe', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Inexistente', 'Juan');
+    expect(resultado).toBe(false);
+  });
+
+  it('retorna false cuando el ticket no se encuentra en la estación', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Pedro'); // Pedro no tiene ticket
+    expect(resultado).toBe(false);
+  });
+
+  it('retorna true y elimina el ticket cuando se encuentra correctamente', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultado).toBe(true);
+    
+    const resultadoSegundaEliminacion = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultadoSegundaEliminacion).toBe(false); // Ya no debería encontrarlo
+  });
+});
+
+/*----------------------------------------------------------*/
+
+
+
+
   
 });

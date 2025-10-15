@@ -154,14 +154,49 @@ describe('obtenerTodosLosTicketsAgrupados', () => {
   });
 
 /*----------------------------------------------------------*/
-it('retorna false cuando la estación no existe', () => {
-  const resultado = eliminarTicket('Estacion Inexistente', 'Juan');
-  expect(resultado).toBe(false);
+
+// Pruebas para eliminarTicket - Complejidad Ciclomática = 3
+describe('eliminarTicket', () => {
+  
+  // CAMINO 1: Estación no encontrada (primera condición if (!estacion))
+  it('retorna false cuando la estación no existe', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Inexistente', 'Juan');
+    expect(resultado).toBe(false);
+  });
+
+  it('retorna false cuando el ticket no se encuentra en la estación', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Pedro'); // Pedro no tiene ticket
+    expect(resultado).toBe(false);
+  });
+
+
 });
 
+/*----------------------------------------------------------*/
 
 
 
-  
+
   
 });

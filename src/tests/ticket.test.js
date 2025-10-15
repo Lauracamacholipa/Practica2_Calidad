@@ -1,4 +1,4 @@
-import { generarTicket, resetTickets } from '../utils/ticket.js';
+import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados } from '../utils/ticket.js';
 
 beforeAll(() => {
   global.localStorage = {
@@ -102,6 +102,17 @@ describe('generarTicket', () => {
     expect(nuevo.nombre).toBe('Laura');
     mockSet.mockRestore();
   });
+/*----------------------------------------------------------*/ 
+
+describe('obtenerTodosLosTicketsAgrupados', () => {
+  
+  it('retorna objeto vacío cuando no hay estaciones', () => {
+    resetTickets([]); 
+    const resultado = obtenerTodosLosTicketsAgrupados();
+    expect(resultado).toEqual({});
+  });
+
+});
 
   
   

@@ -301,4 +301,20 @@ describe("mockEstaciones.js - obtenerEstaciones", () => {
 
     consoleSpy.mockRestore();
   });
+
+  // ✅ Test: localStorage vacío
+  it("R3: debería devolver solo estaciones base cuando localStorage está vacío", () => {
+    // Configurar datos limpios para este test
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      { nombre: "Estación Base 1" },
+      { nombre: "Estación Base 2" }
+    );
+
+    localStorageMock.getItem.mockReturnValueOnce(JSON.stringify([]));
+
+    const resultado = obtenerEstaciones();
+
+    expect(resultado.length).toBe(2); // Solo las 2 base
+  });
 });

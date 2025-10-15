@@ -7,7 +7,7 @@ const localStorageMock = {
 global.localStorage = localStorageMock;
 
 // Importar funciones UNA SOLA VEZ al inicio
-import { agregarAfila, agregarCombustibleExistente, estacionesLista } from '../data/mockEstaciones.js';
+import { agregarAfila, agregarCombustibleExistente, estacionesLista, obtenerEstaciones } from '../data/mockEstaciones.js';
 
 describe('agregarAfila() - Test 1', () => {
   beforeEach(() => {
@@ -245,4 +245,76 @@ describe('agregarCombustibleExistente() - Test 2', () => {
     expect(resultado).toBe("Estación no encontrada");
   });
 
+});
+// En el describe de "mockEstaciones.js", reemplaza completamente:
+
+describe("mockEstaciones.js - obtenerEstaciones", () => {
+  let originalEstacionesLista;
+
+  beforeEach(() => {
+    // Guardar el estado original
+    originalEstacionesLista = [...estacionesLista];
+    jest.clearAllMocks();
+    localStorageMock.getItem.mockReturnValue(JSON.stringify([]));
+  });
+
+  afterEach(() => {
+    // Restaurar el estado original después de cada test
+    estacionesLista.length = 0;
+    estacionesLista.push(...originalEstacionesLista);
+  });
+
+  // ✅ Test: JSON válido - CORREGIDO
+  it("R1: debería devolver estaciones base + adicionales cuando el JSON es válido", () => {
+    // Configurar datos limpios para este test
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      { nombre: "Estación Base 1" },
+      { nombre: "Estación Base 2" }
+    );
+
+    const estacionAdicional = { nombre: "Surtidor C" };
+    localStorageMock.getItem.mockReturnValueOnce(JSON.stringify([estacionAdicional]));
+
+    const resultado = obtenerEstaciones();
+
+    expect(resultado.length).toBe(3); // 2 base + 1 adicional
+    expect(resultado.some(e => e.nombre === "Surtidor C")).toBe(true);
+  });
+
+  // ✅ Test: JSON malformado (error) - CORREGIDO
+  it("R2: debería manejar error si el JSON está malformado y devolver solo estaciones base", () => {
+    // Configurar datos limpios para este test
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      { nombre: "Estación Base 1" },
+      { nombre: "Estación Base 2" }
+    );
+
+    localStorageMock.getItem.mockReturnValueOnce("JSON_NO_VALIDO");
+    const consoleSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+
+    const resultado = obtenerEstaciones();
+
+    expect(resultado.length).toBe(2); // Solo las 2 base
+    expect(consoleSpy).toHaveBeenCalled();
+
+    consoleSpy.mockRestore();
+  });
+
+  // ✅ Test: localStorage vacío
+  it("R3: debería devolver solo estaciones base cuando localStorage está vacío", () => {
+    // Configurar datos limpios para este test
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      { nombre: "Estación Base 1" },
+      { nombre: "Estación Base 2" }
+    );
+
+    localStorageMock.getItem.mockReturnValueOnce(JSON.stringify([]));
+
+    const resultado = obtenerEstaciones();
+
+    expect(resultado.length).toBe(2); // Solo las 2 base
+  });
 });

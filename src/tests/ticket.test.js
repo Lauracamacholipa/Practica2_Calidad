@@ -1,4 +1,4 @@
-import { generarTicket, resetTickets } from '../utils/ticket.js';
+import { generarTicket, resetTickets, obtenerTodosLosTicketsAgrupados, eliminarTicket } from '../utils/ticket.js';
 
 beforeAll(() => {
   global.localStorage = {
@@ -102,7 +102,118 @@ describe('generarTicket', () => {
     expect(nuevo.nombre).toBe('Laura');
     mockSet.mockRestore();
   });
+/*----------------------------------------------------------*/ 
 
+describe('obtenerTodosLosTicketsAgrupados', () => {
   
+  it('retorna objeto vacío cuando no hay estaciones', () => {
+    resetTickets([]); 
+    const resultado = obtenerTodosLosTicketsAgrupados();
+    expect(resultado).toEqual({});
+  });
+
+});
+  it('ordena tickets por fecha cuando fechaCarga es diferente', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Test',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-10', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = obtenerTodosLosTicketsAgrupados();
+    
+    expect(resultado['Estacion Test']).toHaveLength(2);
+    expect(resultado['Estacion Test'][0].fechaCarga).toBe('2025-10-08');
+    expect(resultado['Estacion Test'][1].fechaCarga).toBe('2025-10-10');
+  });
+
+  it('ordena tickets por numeroTurno cuando fechaCarga es igual', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Test',
+        filaTickets: [
+          { numeroTurno: 3, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Pedro' },
+          { numeroTurno: 1, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' },
+          { numeroTurno: 2, tipoCombustible: 'Especial', fechaCarga: '2025-10-08', nombre: 'Luis' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = obtenerTodosLosTicketsAgrupados();
+    
+    expect(resultado['Estacion Test']).toHaveLength(3);
+    expect(resultado['Estacion Test'][0].numeroTurno).toBe(1);
+    expect(resultado['Estacion Test'][1].numeroTurno).toBe(2);
+    expect(resultado['Estacion Test'][2].numeroTurno).toBe(3);
+  });
+
+/*----------------------------------------------------------*/
+
+// Pruebas para eliminarTicket - Complejidad Ciclomática = 3
+describe('eliminarTicket', () => {
+  
+  // CAMINO 1: Estación no encontrada (primera condición if (!estacion))
+  it('retorna false cuando la estación no existe', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Inexistente', 'Juan');
+    expect(resultado).toBe(false);
+  });
+
+  it('retorna false cuando el ticket no se encuentra en la estación', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Pedro'); // Pedro no tiene ticket
+    expect(resultado).toBe(false);
+  });
+
+  it('retorna true y elimina el ticket cuando se encuentra correctamente', () => {
+    resetTickets([
+      {
+        nombre: 'Estacion Norte',
+        filaTickets: [
+          { numeroTurno: 1, tipoCombustible: 'Gasolina', fechaCarga: '2025-10-08', nombre: 'Juan' },
+          { numeroTurno: 2, tipoCombustible: 'Diesel', fechaCarga: '2025-10-08', nombre: 'Ana' }
+        ],
+        filaEspera: []
+      }
+    ]);
+    
+    const resultado = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultado).toBe(true);
+    
+    const resultadoSegundaEliminacion = eliminarTicket('Estacion Norte', 'Juan');
+    expect(resultadoSegundaEliminacion).toBe(false); // Ya no debería encontrarlo
+  });
+});
+
+/*----------------------------------------------------------*/
+
+
+
+
   
 });

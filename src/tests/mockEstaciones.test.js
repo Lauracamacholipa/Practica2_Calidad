@@ -281,4 +281,24 @@ describe("mockEstaciones.js - obtenerEstaciones", () => {
     expect(resultado.length).toBe(3); // 2 base + 1 adicional
     expect(resultado.some(e => e.nombre === "Surtidor C")).toBe(true);
   });
+
+  // ✅ Test: JSON malformado (error) - CORREGIDO
+  it("R2: debería manejar error si el JSON está malformado y devolver solo estaciones base", () => {
+    // Configurar datos limpios para este test
+    estacionesLista.length = 0;
+    estacionesLista.push(
+      { nombre: "Estación Base 1" },
+      { nombre: "Estación Base 2" }
+    );
+
+    localStorageMock.getItem.mockReturnValueOnce("JSON_NO_VALIDO");
+    const consoleSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+
+    const resultado = obtenerEstaciones();
+
+    expect(resultado.length).toBe(2); // Solo las 2 base
+    expect(consoleSpy).toHaveBeenCalled();
+
+    consoleSpy.mockRestore();
+  });
 });
